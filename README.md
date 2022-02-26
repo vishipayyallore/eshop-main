@@ -4,6 +4,10 @@ Main Project for eCommerce Shopping solution
 ## Architecture Diagram
 ![OverAllArchitecture |150x150](./Documentation/Images/OverAllArchitecture.PNG)
 
+## Links to Documentation
+
+[./HowTos/HowToRunTheSolution.md](./HowTos/HowToRunTheSolution.md)
+
 ## Folder Structure
 
 ### eshop-main project folder
