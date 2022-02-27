@@ -6,7 +6,7 @@ Main Project for eCommerce Shopping solution
 
 ## Links to Documentation
 
-[./HowTos/HowToRunTheSolution.md](./HowTos/HowToRunTheSolution.md)
+> 1. [How To Run The Solution](./HowTos/HowToRunTheSolution.md)
 
 ## Folder Structure
 
