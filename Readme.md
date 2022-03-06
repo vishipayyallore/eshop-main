@@ -15,4 +15,4 @@ Main Project for eCommerce Shopping solution
 
 ### eshop-services-products project folder
 ![eshop-services-products project folder |150x150](./Documentation/Images/eshop-services-products.PNG)
-..
+
