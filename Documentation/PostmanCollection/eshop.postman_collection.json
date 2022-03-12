@@ -1,0 +1,35 @@
+{
+	"info": {
+		"_postman_id": "af7e0c6d-e792-48ad-9a71-3362db735bf6",
+		"name": "eshop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "services-products",
+			"item": [
+				{
+					"name": "https://localhost:7265/api/v1/Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7265/api/v1/Products",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7265",
+							"path": [
+								"api",
+								"v1",
+								"Products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
