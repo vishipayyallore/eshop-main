@@ -4,8 +4,6 @@ while [[ "/$PWD/" = *"/eshop-main/"* ]]; do
     cd ..
 done
 
-echo $PWD
-
 REPOSITORIES=(eshop-client-ngweb eshop-services-basket eshop-services-products eshop.apigateway.ocelot)
 
 for REPOSITORY in ${REPOSITORIES[*]}
