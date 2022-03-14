@@ -15,15 +15,21 @@ REPOSITORIES=(eshop-client-ngweb eshop-client-razorweb eshop-client-rjweb  eshop
 
 for REPOSITORY in ${REPOSITORIES[*]}
 do
-	 echo ========================================================
-	 echo Updating the repository: $REPOSITORY
-	 echo ========================================================
+
+	echo ========================================================
+	echo UPDATING the repository: $REPOSITORY
+	echo ========================================================
 
 	 if [[ ! -e $REPOSITORY ]]; then
+
 		epository_url="https://github.com/vishipayyallore/"$REPOSITORY".git"
 		echo $epository_url
     	git clone $epository_url
+
+	 else
+
+	 	cd $REPOSITORY && git checkout && git pull && git checkout main && git pull && cd ..
+
 	 fi
 
-	 cd $REPOSITORY && git checkout && git pull && git checkout main && git pull && cd ..
 done
