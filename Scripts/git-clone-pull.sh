@@ -4,7 +4,7 @@
 # Description: Shell script to clone a git repository and pull the latest changes
 # Authors: Robbie, and Swamy
 # Date: 12-Mar-2022
-# Modified: 13-Mar-2022
+# Modified: 14-Mar-2022
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 
 while [[ "/$PWD/" = *"/eshop-main/"* ]]; do
