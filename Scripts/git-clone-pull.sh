@@ -20,16 +20,16 @@ do
 	echo UPDATING the repository: $REPOSITORY
 	echo ========================================================
 
-	 if [[ ! -e $REPOSITORY ]]; then
+	if [[ ! -e $REPOSITORY ]]; then
 
 		epository_url="https://github.com/vishipayyallore/"$REPOSITORY".git"
 		echo $epository_url
     	git clone $epository_url
 
-	 else
+	else
 
 	 	cd $REPOSITORY && git checkout && git pull && git checkout main && git pull && cd ..
 
-	 fi
+	fi
 
 done
