@@ -4,8 +4,14 @@
 # Description: Shell script to clone a git repository and pull the latest changes
 # Authors: Robbie, and Swamy
 # Date: 12-Mar-2022
-# Modified: 14-Mar-2022
+# Modified: 15-Mar-2022
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+
+if [[ "/$PWD/" != *"/eshop-main/Scripts"* ]]; then
+	echo -e "\e[1;31m Please execute the script from (YourDrive/YourRootFolder/eshop-main/Scripts) directory \e[0m"
+
+	exit
+fi
 
 while [[ "/$PWD/" = *"/eshop-main/"* ]]; do
     cd ..
