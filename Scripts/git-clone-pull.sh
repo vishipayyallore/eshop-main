@@ -11,7 +11,7 @@ while [[ "/$PWD/" = *"/eshop-main/"* ]]; do
     cd ..
 done
 
-REPOSITORIES=(eshop-client-ngweb eshop-client-razorweb eshop-client-rjweb  eshop-client-webstatus eshop-services-basket eshop-services-products eshop-apigateway-ocelot)
+REPOSITORIES=(eshop-client-ngweb eshop-client-razorweb eshop-client-rjweb eshop-client-webstatus eshop-services-basket eshop-services-products eshop-apigateway-ocelot)
 
 for REPOSITORY in ${REPOSITORIES[*]}
 do
