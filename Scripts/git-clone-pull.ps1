@@ -7,12 +7,19 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 #>
 
+$dir = pwd
+if ( !$dir.path.EndsWith('\eshop-main\Scripts') ){
+   Write-Host "Please execute the script from (YourDrive/YourRootFolder/eshop-main/Scripts) directory" -ForegroundColor red
+   exit
+}
+
+
 $repositories = ("eshop-client-ngweb", "eshop-client-razorweb", "eshop-client-rjweb",  "eshop-client-webstatus", "eshop-services-basket", "eshop-services-products", "eshop-apigateway-ocelot")
 
 foreach ($epository in $repositories) {
 
     Write-Host "=========================================="
-    Write-Host "Cloning the Repository: "$epository
+    Write-Host "Cl the Repository: "$epository
     Write-Host "=========================================="
     
     $epository_url = "https://github.com/devmentors/" + $epository + ".git"
