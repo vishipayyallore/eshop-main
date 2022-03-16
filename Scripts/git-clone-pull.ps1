@@ -22,7 +22,7 @@ $repositories = ("eshop-client-ngweb", "eshop-client-razorweb", "eshop-client-rj
 foreach ($epository in $repositories) {
 
     Write-Host "=========================================="
-    Write-Host "Cloning the Repository: "$epository
+    Write-Host "Updating the Repository: "$epository
     Write-Host "=========================================="
     
     if ( Test-Path -Path "$($PWD)\$epository") {
