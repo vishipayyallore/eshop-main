@@ -13,6 +13,9 @@ if ( !$dir.path.EndsWith('\eshop-main\Scripts') ){
    exit
 }
 
+while ( $pwd.path.Contains('eshop-main')) {
+    cd ..
+}
 
 $repositories = ("eshop-client-ngweb", "eshop-client-razorweb", "eshop-client-rjweb",  "eshop-client-webstatus", "eshop-services-basket", "eshop-services-products", "eshop-apigateway-ocelot")
 
@@ -22,7 +25,7 @@ foreach ($epository in $repositories) {
     Write-Host "Cl the Repository: "$epository
     Write-Host "=========================================="
     
-    $epository_url = "https://github.com/devmentors/" + $epository + ".git"
+    $epository_url = "https://github.com/vishipayyallore/" + $epository + ".git"
     
     git clone $epository_url
 }
