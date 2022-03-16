@@ -3,7 +3,7 @@
 # Description: Shell script to clone a git repository and pull the latest changes
 # Authors: Apaar, Robbie, and Swamy
 # Date: 12-Mar-2022
-# Modified: 13-Mar-2022
+# Modified: 16-Mar-2022
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 #>
 
@@ -25,7 +25,13 @@ foreach ($epository in $repositories) {
     Write-Host "Cloning the Repository: "$epository
     Write-Host "=========================================="
     
-    $epository_url = "https://github.com/vishipayyallore/" + $epository + ".git"
+    if ( Test-Path -Path "$($PWD)\$epository") {
+        Set-Location $epository && git checkout && git pull && git checkout main && git pull && Set-Location ..
+    }
+    else {
+        $epository_url = "https://github.com/vishipayyallore/" + $epository + ".git"
     
-    # git clone $epository_url
+        git clone $epository_url
+    }
+   
 }
