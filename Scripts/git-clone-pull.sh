@@ -7,15 +7,11 @@
 # Modified: 15-Mar-2022
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 
-if [[ "/$PWD/" != *"/eshop-main/Scripts"* ]]; then
-	echo -e "\e[1;31m Please execute the script from (YourDrive/YourRootFolder/eshop-main/Scripts) directory \e[0m"
+if [[ ! -e "/$PWD/eshop-main/Scripts" ]]; then
+	echo -e "Please execute the script from the folder containing eshop-main directory."
 
 	exit
 fi
-
-while [[ "/$PWD/" = *"/eshop-main/"* ]]; do
-    cd ..
-done
 
 REPOSITORIES=(eshop-client-ngweb eshop-client-razorweb eshop-client-rjweb eshop-client-webstatus eshop-services-basket eshop-services-products eshop-apigateway-ocelot)
 
