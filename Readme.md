@@ -1,5 +1,5 @@
 # eshop-main
-Main Project for eCommerce Shopping solution
+Main Project for eCommerce Shopping solution built on MICROSOFT AZURE
 
 ## Architecture Diagram
 ![OverAllArchitecture |150x150](./Documentation/Images/OverAllArchitecture.PNG)
