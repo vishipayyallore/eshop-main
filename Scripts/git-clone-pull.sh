@@ -7,7 +7,7 @@
 # Modified: 15-Mar-2022
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 
-if [[ ! -e "/$PWD/eshop-main/Scripts" ]]; then
+if [[ ! -e "$PWD/eshop-main/Scripts" ]]; then
 	echo -e "Please execute the script from the folder containing eshop-main directory."
 
 	exit
