@@ -26,6 +26,47 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "GET /api/v1/Products/{ProductId}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{services-products-url}}/api/v1/Products/602d2149e773f2a3990b47f5",
+							"host": [
+								"{{services-products-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Products",
+								"602d2149e773f2a3990b47f5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /api/v1/Products/GetProductsByCategory/{Category}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{services-products-url}}/api/v1/Products/GetProductsByCategory/Smart%20Phone",
+							"host": [
+								"{{services-products-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Products",
+								"GetProductsByCategory",
+								"Smart%20Phone"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
