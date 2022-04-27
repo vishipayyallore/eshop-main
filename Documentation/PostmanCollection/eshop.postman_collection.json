@@ -67,6 +67,27 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "GET /api/v1/Products/GetProductsByName/{ProductName}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{services-products-url}}/api/v1/Products/GetProductsByName/IPhone",
+							"host": [
+								"{{services-products-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Products",
+								"GetProductsByName",
+								"IPhone"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
