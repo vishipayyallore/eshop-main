@@ -88,6 +88,34 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "POST /api/v1/Products",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Some Product\",\r\n  \"category\": \"Some Category\",\r\n  \"summary\": \"Some Summary\",\r\n  \"description\": \"Some Description\",\r\n  \"imageFile\": \"Some Image Path\",\r\n  \"price\": 1.1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{services-products-url}}/api/v1/Products",
+							"host": [
+								"{{services-products-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Products"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
