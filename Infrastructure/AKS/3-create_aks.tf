@@ -9,15 +9,15 @@ resource "azurerm_kubernetes_cluster" "k8s" {
   dns_prefix          = var.dns_prefix
 
   default_node_pool {
-    name                 = "agentpool"
-    node_count           = var.agent_count
-    vm_size              = "Standard_D2_v2"
-    os_disk_size_gb      = 30
-    orchestrator_version = "1.24.1"
-    enable_auto_scaling  = true
-    max_count            = 3
-    min_count            = 1
-    type                 = "VirtualMachineScaleSets"
+    name            = "agentpool"
+    node_count      = var.agent_count
+    vm_size         = "Standard_D2_v2"
+    os_disk_size_gb = 30
+    # orchestrator_version = "1.22.11"
+    enable_auto_scaling = true
+    max_count           = 3
+    min_count           = 1
+    type                = "VirtualMachineScaleSets"
   }
 
   identity {
