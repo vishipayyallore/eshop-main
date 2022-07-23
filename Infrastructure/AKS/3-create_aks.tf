@@ -9,6 +9,7 @@ resource "azurerm_kubernetes_cluster" "k8s" {
   dns_prefix          = var.dns_prefix
 
   default_node_pool {
+    orchestrator_version = "1.22.11"
     name                 = "agentpool"
     vm_size              = "Standard_D2_v2"
     os_disk_size_gb      = 30
