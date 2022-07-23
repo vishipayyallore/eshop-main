@@ -2,10 +2,9 @@ name: "Gated, CI, and Deploy AKS - Terraform"
 
 on:
   push:
-    branches:
-      - main
-    paths:
-      - ".github/workflows/deploy-aks.yml"
+    branches: [main]
+    # paths:
+    #   - ".github/workflows/deploy-aks.yml"
   pull_request:
     branches: [main]
     # Allows you to run this workflow manually from the Actions tab
