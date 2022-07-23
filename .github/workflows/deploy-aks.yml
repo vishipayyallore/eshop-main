@@ -44,10 +44,11 @@ jobs:
           # baseline: cloudformation/.checkov.baseline # optional: Path to a generated baseline file. Will only report results not in the baseline.
           # container_user: 1000 # optional: Define what UID and / or what GID to run the container under to prevent permission issues
 
-  terraform:
+  deploy-terraform-aks-azure:
     name: "Terraform"
     runs-on: ubuntu-latest
     environment: production
+    needs: [scan-terraform-config]
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
