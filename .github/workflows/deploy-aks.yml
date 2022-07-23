@@ -82,7 +82,6 @@ jobs:
   ci-terraform-build:
     name: "CI Build when PR terraform"
     runs-on: ubuntu-latest
-    environment: development
     needs: [gated-terraform-build]
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
