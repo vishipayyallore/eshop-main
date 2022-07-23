@@ -46,7 +46,6 @@ jobs:
   gated-terraform-build:
     name: "Gated Build when PR terraform"
     runs-on: ubuntu-latest
-    environment: development
     needs: [scan-terraform-config]
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
