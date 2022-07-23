@@ -15,7 +15,7 @@ resource "azurerm_kubernetes_cluster" "k8s" {
     orchestrator_version = "1.24.1"
     enable_auto_scaling  = true
     max_count            = var.agent_max_count
-    min_count            = var.agentmin_count
+    min_count            = var.agent_min_count
     type                 = "VirtualMachineScaleSets"
   }
 
