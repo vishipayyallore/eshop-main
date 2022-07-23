@@ -8,8 +8,12 @@ variable "resource_group_location" {
   description = "Location of the resource group."
 }
 
-variable "agent_count" {
-  default = 2
+variable "agent_min_count" {
+  default = 1
+}
+
+variable "agent_max_count" {
+  default = 3
 }
 
 variable "ssh_public_key" {
