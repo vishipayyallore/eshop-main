@@ -379,3 +379,8 @@ Temporary Items
 .apdisk
 
 # End of https://www.toptal.com/developers/gitignore/api/macos
+# Terraform Related Files
+.terraform/
+**/.terraform/
+**/terraform.tfstate
+**/terraform.tfstate.backup
