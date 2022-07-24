@@ -46,10 +46,10 @@ jobs:
     needs: [scan-terraform-config]
     uses: ./.github/workflows/gated-terraform-build.yml
     with:
-      ARMCLIENTID: ${{ secrets.AZURE_AD_CLIENT_ID }}
-      ARMCLIENTSECRET: ${{ env.AZURE_AD_CLIENT_SECRET }}
-      ARMSUBSCRIPTIONID: ${{ env.AZURE_SUBSCRIPTION_ID }}
-      ARMTENANTID: ${{ env.AZURE_AD_TENANT_ID }}
+      ARMCLIENTID: ${{ env.ARM_CLIENT_ID }}
+      ARMCLIENTSECRET: ${{ env.ARM_CLIENT_SECRET }}
+      ARMSUBSCRIPTIONID: ${{ env.ARM_SUBSCRIPTION_ID }}
+      ARMTENANTID: ${{ env.ARM_TENANT_ID }}
 
   ci-terraform-build:
     name: "CI Build when PR terraform"
