@@ -2,12 +2,21 @@ name: Gated Build when PR is raised
 
 on:
   workflow_call:
+    inputs:
+      ARM_CLIENT_ID:
+        required: true
+        type: string
+      ARM_CLIENT_SECRET:
+        required: true
+        type: string
+      ARM_SUBSCRIPTION_ID:
+        required: true
+        type: string
+      ARM_TENANT_ID:
+        required: true
+        type: string
 
 env:
-  ARM_CLIENT_ID: ${{ secrets.AZURE_AD_CLIENT_ID }}
-  ARM_CLIENT_SECRET: ${{ secrets.AZURE_AD_CLIENT_SECRET }}
-  ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-  ARM_TENANT_ID: ${{ secrets.AZURE_AD_TENANT_ID }}
   WORKING_DIRECTORY: "./Infrastructure/AKS"
 
 jobs:
