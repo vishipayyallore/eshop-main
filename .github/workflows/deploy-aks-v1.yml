@@ -44,7 +44,7 @@ jobs:
 
   gated-terraform-build:
     needs: [scan-terraform-config]
-    uses: ./.github/workflows/workflow-2.yml
+    uses: ./.github/workflows/gated-terraform-build.yml
 
   ci-terraform-build:
     name: "CI Build when PR terraform"
