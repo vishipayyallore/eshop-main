@@ -49,7 +49,7 @@ jobs:
   ci-terraform-build:
     name: "CI Build when PR terraform"
     runs-on: ubuntu-latest
-    # needs: [gated-terraform-build]
+    needs: [gated-terraform-build]
     if: github.ref == 'refs/heads/main'
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
