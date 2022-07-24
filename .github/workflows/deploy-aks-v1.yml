@@ -16,7 +16,6 @@ env:
   ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
   ARM_TENANT_ID: ${{ secrets.AZURE_AD_TENANT_ID }}
   WORKING_DIRECTORY: "./Infrastructure/AKS"
-  ARMCLIENTID: ${{ secrets.AZURE_AD_CLIENT_ID }}
 
 jobs:
   scan-terraform-config:
@@ -47,7 +46,7 @@ jobs:
     needs: [scan-terraform-config]
     uses: ./.github/workflows/gated-terraform-build.yml
     with:
-      ARMCLIENTID: ${{ env.ARMCLIENTID }}
+      ARMCLIENTID: ${{ secrets.AZURE_AD_CLIENT_ID }}
       ARMCLIENTSECRET: ${{ env.ARM_CLIENT_SECRET }}
       ARMSUBSCRIPTIONID: ${{ env.ARM_SUBSCRIPTION_ID }}
       ARMTENANTID: ${{ env.ARM_TENANT_ID }}
