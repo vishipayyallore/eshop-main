@@ -1,4 +1,4 @@
-name: "Gated, CI, and Deploy AKS - Terraform (Latest)"
+name: "Gated, CI, and Deploy AKS - Terraform (Old)"
 
 on:
   push:
