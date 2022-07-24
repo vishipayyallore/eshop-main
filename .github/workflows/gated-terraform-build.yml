@@ -3,12 +3,12 @@ name: "Gated - Terraform Build"
 on:
   workflow_call:
 
-env:
-  ARM_CLIENT_ID: ${{ secrets.AZURE_AD_CLIENT_ID }}
-  ARM_CLIENT_SECRET: ${{ secrets.AZURE_AD_CLIENT_SECRET }}
-  ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-  ARM_TENANT_ID: ${{ secrets.AZURE_AD_TENANT_ID }}
-  WORKING_DIRECTORY: "./Infrastructure/AKS"
+# env:
+#   ARM_CLIENT_ID: ${{ secrets.AZURE_AD_CLIENT_ID }}
+#   ARM_CLIENT_SECRET: ${{ secrets.AZURE_AD_CLIENT_SECRET }}
+#   ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+#   ARM_TENANT_ID: ${{ secrets.AZURE_AD_TENANT_ID }}
+#   WORKING_DIRECTORY: "./Infrastructure/AKS"
 
 jobs:
   gated-terraform-build:
@@ -29,18 +29,18 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
 
-      # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
-      - name: Terraform Init
-        run: terraform init
-        working-directory: ${{ env.WORKING_DIRECTORY }}
+      # # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
+      # - name: Terraform Init
+      #   run: terraform init
+      #   working-directory: ${{ env.WORKING_DIRECTORY }}
 
-      # Checks that all Terraform configuration files adhere to a canonical format
-      - name: Terraform Format
-        run: terraform fmt -check
-        continue-on-error: true
-        working-directory: ${{ env.WORKING_DIRECTORY }}
+      # # Checks that all Terraform configuration files adhere to a canonical format
+      # - name: Terraform Format
+      #   run: terraform fmt -check
+      #   continue-on-error: true
+      #   working-directory: ${{ env.WORKING_DIRECTORY }}
 
-      # Validates the Terraform Files
-      - name: Terraform Validate
-        run: terraform validate
-        working-directory: ${{ env.WORKING_DIRECTORY }}
+      # # Validates the Terraform Files
+      # - name: Terraform Validate
+      #   run: terraform validate
+      #   working-directory: ${{ env.WORKING_DIRECTORY }}
