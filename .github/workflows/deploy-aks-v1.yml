@@ -1,11 +1,9 @@
-name: "Gated, CI, and Deploy AKS - Terraform (Old)"
+name: "Gated, CI, and Deploy AKS - Terraform - Version 1"
 
 on:
   push:
     branches:
       - main
-    # paths:
-    #   - ".github/workflows/deploy-aks.yml"
   pull_request:
     branches:
       - main
@@ -21,63 +19,14 @@ env:
 
 jobs:
   scan-terraform-config:
-    runs-on: ubuntu-latest
     name: Scan Terraform with Checov
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@master
-
-      - name: Run Checkov Scan
-        id: checkov
-        uses: bridgecrewio/checkov-action@v12.1347.0
-        with:
-          directory: ${{ env.WORKING_DIRECTORY }}
-          soft_fail: true # optional: do not return an error code if there are failed checks
-          # check: CKV_AWS_1 # optional: run only a specific check_id. can be comma separated list
-          # skip_check: CKV_AWS_2 # optional: skip a specific check_id. can be comma separated list
-          # quiet: true # optional: display only failed checks
-          # framework: terraform # optional: run only on a specific infrastructure {cloudformation,terraform,kubernetes,all}
-          # output_format: sarif # optional: the output format, one of: cli, json, junitxml, github_failed_only, or sarif. Default: sarif
-          # download_external_modules: true # optional: download external terraform modules from public git repositories and terraform registry
-          # log_level: DEBUG # optional: set log level. Default WARNING
-          # config_file: path/this_file
-          # baseline: cloudformation/.checkov.baseline # optional: Path to a generated baseline file. Will only report results not in the baseline.
-          # container_user: 1000 # optional: Define what UID and / or what GID to run the container under to prevent permission issues
+    uses: ./.github/workflows/01-Scan-Terraform-Config.yml
 
   gated-terraform-build:
     name: "Gated Build when PR terraform"
-    runs-on: ubuntu-latest
     needs: [scan-terraform-config]
-
-    # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
-    defaults:
-      run:
-        shell: bash
-
-    steps:
-      # Checkout the repository to the GitHub Actions runner
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
-      - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v1
-
-      # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
-      - name: Terraform Init
-        run: terraform init
-        working-directory: ${{ env.WORKING_DIRECTORY }}
-
-      # Checks that all Terraform configuration files adhere to a canonical format
-      - name: Terraform Format
-        run: terraform fmt -check
-        continue-on-error: true
-        working-directory: ${{ env.WORKING_DIRECTORY }}
-
-      # Validates the Terraform Files
-      - name: Terraform Validate
-        run: terraform validate
-        working-directory: ${{ env.WORKING_DIRECTORY }}
+    uses: ./.github/workflows/02-Gated-Terraform-Build.yml
+    secrets: inherit
 
   ci-terraform-build:
     name: "CI Build when PR terraform"
