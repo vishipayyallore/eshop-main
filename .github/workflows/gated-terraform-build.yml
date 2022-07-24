@@ -1,14 +1,7 @@
-name: "Gated - Terraform Build"
+name: Gated Terraform Build
 
 on:
   workflow_call:
-
-# env:
-#   ARM_CLIENT_ID: ${{ secrets.AZURE_AD_CLIENT_ID }}
-#   ARM_CLIENT_SECRET: ${{ secrets.AZURE_AD_CLIENT_SECRET }}
-#   ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-#   ARM_TENANT_ID: ${{ secrets.AZURE_AD_TENANT_ID }}
-#   WORKING_DIRECTORY: "./Infrastructure/AKS"
 
 jobs:
   gated-terraform-build:
@@ -25,9 +18,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
-      - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v1
+      # # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
+      # - name: Setup Terraform
+      #   uses: hashicorp/setup-terraform@v1
 
       # # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
       # - name: Terraform Init
