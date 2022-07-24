@@ -19,6 +19,7 @@ env:
 
 jobs:
   scan-terraform-config:
+    name: Scan Terraform with Checov
     uses: ./.github/workflows/01-Scan-Terraform-Config.yml
   # scan-terraform-config:
   #   runs-on: ubuntu-latest
@@ -45,6 +46,7 @@ jobs:
   #         # container_user: 1000 # optional: Define what UID and / or what GID to run the container under to prevent permission issues
 
   gated-terraform-build:
+    name: "Gated Build when PR terraform"
     needs: [scan-terraform-config]
     uses: ./.github/workflows/gated-terraform-build.yml
     with:
