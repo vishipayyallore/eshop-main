@@ -1,11 +1,10 @@
-name: Gated Terraform Build
+name: Gated Build when PR is raised
 
 on:
   workflow_call:
 
 jobs:
   gated-terraform-build:
-    name: "Gated Build when PR is raised"
     runs-on: ubuntu-latest
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest

@@ -43,7 +43,7 @@ jobs:
           # container_user: 1000 # optional: Define what UID and / or what GID to run the container under to prevent permission issues
 
   gated-terraform-build:
-    uses: vishipayyallore/eshop-main/.github/workflows/gated-terraform-build.yml
+    uses: ./.github/workflows/gated-terraform-build.yml
 
   ci-terraform-build:
     name: "CI Build when PR terraform"
