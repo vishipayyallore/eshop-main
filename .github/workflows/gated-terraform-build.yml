@@ -3,21 +3,25 @@ name: Gated Build when PR is raised
 on:
   workflow_call:
     inputs:
-      ARM_CLIENT_ID:
+      ARMCLIENTID:
         required: true
         type: string
-      ARM_CLIENT_SECRET:
+      ARMCLIENTSECRET:
         required: true
         type: string
-      ARM_SUBSCRIPTION_ID:
+      ARMSUBSCRIPTIONID:
         required: true
         type: string
-      ARM_TENANT_ID:
+      ARMTENANTID:
         required: true
         type: string
 
 env:
   WORKING_DIRECTORY: "./Infrastructure/AKS"
+  ARM_CLIENT_ID: ${{ inputs.ARMCLIENTID }}
+  ARM_CLIENT_SECRET: ${{ secrets.ARMCLIENTSECRET }}
+  ARM_SUBSCRIPTION_ID: ${{ secrets.ARMSUBSCRIPTIONID }}
+  ARM_TENANT_ID: ${{ secrets.ARMTENANTID }}
 
 jobs:
   gated-terraform-build:
