@@ -1,3 +1,5 @@
+name: Scan Terraform with Checov
+
 on:
   workflow_call:
 

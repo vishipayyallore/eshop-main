@@ -1,3 +1,5 @@
+name: Gated Build when PR is Raised
+
 on:
   workflow_call:
 
