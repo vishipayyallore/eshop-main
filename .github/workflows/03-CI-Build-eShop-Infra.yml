@@ -1,4 +1,4 @@
-name: CI Build when PR is Merged
+name: "03. CI Build when PR is Merged"
 
 on:
   workflow_call:

@@ -1,4 +1,4 @@
-name: Deploy eShop Infra using Terraform to Azure
+name: "04. Deploy eShop Infra using Terraform to Azure"
 
 on:
   workflow_call:
