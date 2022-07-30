@@ -11,7 +11,7 @@ env:
   ARM_TENANT_ID: ${{ secrets.AZURE_AD_TENANT_ID }}
 
 jobs:
-  deploy-terraform-aks-azure:
+  deploy-infra-to-azure:
     runs-on: ubuntu-latest
     environment: development
 

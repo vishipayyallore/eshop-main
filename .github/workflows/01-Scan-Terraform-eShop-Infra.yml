@@ -7,7 +7,7 @@ env:
   WORKING_DIRECTORY: "./Infrastructure/AKS"
 
 jobs:
-  scan-terraform-config:
+  scan-terraform-config-files:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo

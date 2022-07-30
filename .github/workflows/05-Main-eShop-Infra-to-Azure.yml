@@ -18,26 +18,26 @@ env:
   WORKING_DIRECTORY: "./Infrastructure/AKS"
 
 jobs:
-  scan-terraform-config:
+  scan-terraform-config-files:
     name: Scan Terraform files with Checov
     uses: ./.github/workflows/01-Scan-Terraform-eShop-Infra.yml
 
-  gated-terraform-build:
+  gated-build-for-infra:
     name: Gated Build when PR is Raised
-    needs: [scan-terraform-config]
+    needs: [scan-terraform-config-files]
     uses: ./.github/workflows/02-Gated-Build-eShop-Infra.yml
     secrets: inherit
 
-  ci-terraform-build:
+  ci-build-for-infra:
     name: CI Build when PR is Merged
-    needs: [gated-terraform-build]
+    needs: [gated-build-for-infra]
     uses: ./.github/workflows/03-CI-Build-eShop-Infra.yml
     secrets: inherit
     if: github.ref == 'refs/heads/main'
 
-  deploy-terraform-aks-azure:
+  deploy-infra-to-azure:
     name: Deploy eShop Infra using Terraform to Azure
-    needs: [ci-terraform-build]
+    needs: [ci-build-for-infra]
     uses: ./.github/workflows/04-Deploy-eShop-Infra-to-Azure.yml
     secrets: inherit
     if: github.ref == 'refs/heads/main'
