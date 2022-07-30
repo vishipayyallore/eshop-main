@@ -1,3 +1,5 @@
+name: Scan Terraform Config
+
 on:
   workflow_call:
 
