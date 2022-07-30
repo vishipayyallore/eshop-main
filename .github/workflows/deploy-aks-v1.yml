@@ -19,11 +19,11 @@ env:
 
 jobs:
   scan-terraform-config:
-    name: Scan Terraform with Checov
+    # name: Scan Terraform with Checov
     uses: ./.github/workflows/01-Scan-Terraform-Config.yml
 
   gated-terraform-build:
-    name: "Gated Build when PR terraform"
+    # name: Gated Build when PR terraform
     needs: [scan-terraform-config]
     uses: ./.github/workflows/02-Gated-Terraform-Build.yml
     secrets: inherit
