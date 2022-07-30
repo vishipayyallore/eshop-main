@@ -1,4 +1,4 @@
-name: Gated Build when PR is Raised
+name: "02. Gated Build when PR is Raised"
 
 on:
   workflow_call:
