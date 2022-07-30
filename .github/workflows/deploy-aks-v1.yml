@@ -28,11 +28,15 @@ jobs:
     uses: ./.github/workflows/02-Gated-Terraform-Build.yml
     secrets: inherit
 
+  ci-terraform-build-new:
+    needs: [gated-terraform-build]
+    uses: ./.github/workflows/01-Scan-Terraform-Config.yml, ./.github/workflows/02-Gated-Terraform-Build.yml
+
   ci-terraform-build:
     name: "CI Build when PR terraform"
     runs-on: ubuntu-latest
     needs: [gated-terraform-build]
-    if: github.ref == 'refs/heads/main'
+    # if: github.ref == 'refs/heads/main'
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
