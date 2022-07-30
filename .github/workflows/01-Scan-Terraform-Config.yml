@@ -1,4 +1,4 @@
-name: Scan Terraform Config
+# name: Scan Terraform Config
 
 on:
   workflow_call:
