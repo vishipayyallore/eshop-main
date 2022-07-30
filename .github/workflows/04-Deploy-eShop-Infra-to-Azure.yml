@@ -1,4 +1,4 @@
-name: CI Build when PR is Merged
+name: Deploy eShop Infra using Terraform to Azure
 
 on:
   workflow_call:
@@ -11,8 +11,9 @@ env:
   ARM_TENANT_ID: ${{ secrets.AZURE_AD_TENANT_ID }}
 
 jobs:
-  ci-terraform-build:
+  deploy-terraform-aks-azure:
     runs-on: ubuntu-latest
+    environment: development
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
@@ -47,4 +48,11 @@ jobs:
       # Generates an execution plan for Terraform
       - name: Terraform Plan
         run: terraform plan -no-color -input=false
+        working-directory: ${{ env.WORKING_DIRECTORY }}
+
+      # On push to "main", build or change infrastructure according to Terraform configuration files
+      # Note: It is recommended to set up a required "strict" status check in your repository for "Terraform Cloud". See the documentation on "strict" required status checks for more information: https://help.github.com/en/github/administering-a-repository/types-of-required-status-checks
+      - name: Terraform Apply
+        if: github.ref == 'refs/heads/main'
+        run: terraform apply -auto-approve -input=false
         working-directory: ${{ env.WORKING_DIRECTORY }}
