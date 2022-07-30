@@ -1,4 +1,4 @@
-name: Scan Terraform with Checov
+name: 01-Scan-Terraform-eShop-Infra
 
 on:
   workflow_call:
