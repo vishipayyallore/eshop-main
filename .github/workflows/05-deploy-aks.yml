@@ -30,8 +30,10 @@ jobs:
 
   ci-terraform-build-new:
     needs: [gated-terraform-build]
-    uses: ./.github/workflows/01-Scan-Terraform-Config.yml
-      ./.github/workflows/02-Gated-Terraform-Build.yml
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/workflows/01-Scan-Terraform-Config.yml
+      - uses: ./.github/workflows/02-Gated-Terraform-Build.yml
 
   ci-terraform-build:
     name: "CI Build when PR terraform"
