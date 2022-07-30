@@ -1,4 +1,4 @@
-name: "Gated, CI, and Deploy AKS - Terraform"
+name: "05-Main-eShop-Infra-to-Azure"
 
 on:
   push:

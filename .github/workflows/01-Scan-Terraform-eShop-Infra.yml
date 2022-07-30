@@ -1,4 +1,4 @@
-name: Scan Terraform with Checov
+name: "1. Scan Terraform files with Checov"
 
 on:
   workflow_call:
