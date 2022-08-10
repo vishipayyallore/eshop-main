@@ -18,7 +18,7 @@ Main Project for eCommerce Shopping solution built on Microservices architecture
 > 1. [eShop Client Web Razor Pages](https://github.com/vishipayyallore/eshop-client-razorweb)
 > 1. [eShop Client Web Reactjs](https://github.com/vishipayyallore/eshop-client-rjweb)
 
-## Completed Session(s) Video(s)
+## Completed Session(s) Video(s) and Code(s)
 
 > 1. Please watch [**Introduction** to eShop](https://www.youtube.com/watch?v=GB55gX4umNM) video to **get the context**.
 > 1. First step into Products Microservice [**Session1.md**](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session1.md) and its [Video](https://www.youtube.com/watch?v=wQ0Xf4pKZaQ)
