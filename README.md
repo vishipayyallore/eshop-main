@@ -20,18 +20,18 @@ Main Project for eCommerce Shopping solution built on Microservices architecture
 
 ## Completed Session(s) Video(s)
 
-> 1. Please watch [Introduction to eShop](https://www.youtube.com/watch?v=GB55gX4umNM) to **get the context**.
+> 1. Please watch [**Introduction** to eShop](https://www.youtube.com/watch?v=GB55gX4umNM) video to **get the context**.
 > 1. First step into Products Microservice [**Session1.md**](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session1.md) and its [Video](https://www.youtube.com/watch?v=wQ0Xf4pKZaQ)
 > 1. Please refer [**Session2**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session2.md) and [Video](https://www.youtube.com/watch?v=R8QIrph-rCI) for more details.
 > 1. Please refer [**Session3**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session3.md) and [Video](https://www.youtube.com/watch?v=xst1bjb54JM) for more details.
 > 1. Please refer [**Session4**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session4.md) and [Video](https://www.youtube.com/watch?v=G6dPdySKzbs) for more details.
 > 1. Please refer [**Session5**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session5.md) and [Video](https://www.youtube.com/watch?v=LPI0VVM24KI) for more details.
 > 1. Please refer [**Session6**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session6.md) and [Video](https://www.youtube.com/watch?v=FmMIF6_bGuw) for more details.
-> 1. Upcoming **`Session 7`** on 05-Aug-2022 => DevOps, Build/Release for Infrastructure
+> 1. Please refer [**Session7**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session7.md) and [Video](https://www.youtube.com/watch?v=7abmbzh0ckA) for more details.
+> 1. Upcoming **`Session 8`** on 19-Aug-2022 => Build/Release for Infrastructure, GitHub Actions, AKS, Unit Testing
 
 ## Planned Future Sessions
 
-> 1. `Session 8` => Unit Testing, Static Analysis, Software Composition
 > 1. `Session 9` => Build and Release Docker, AKS
 > 1. `Session 10` => Build, and push to ACR, **Recap** of previous **`9 sessions`**
 > 1. `Session 11` => **Angular Client** Integrating with Products Micro Services WITHOUT Authentication. List of Products ONLY. Deploying Angular Client as local Container.
