@@ -2,7 +2,8 @@
 	"info": {
 		"_postman_id": "03d35fc1-4ff6-4d9b-82d6-984ede86b48b",
 		"name": "eshop",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "185209"
 	},
 	"item": [
 		{
@@ -112,6 +113,126 @@
 								"api",
 								"v1",
 								"Products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "services-identity",
+			"item": [
+				{
+					"name": "GET /.well-known/openid-configuration",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5001/.well-known/openid-configuration",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								".well-known",
+								"openid-configuration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /connect/token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var res = pm.response.json();\r",
+									"pm.environment.set('access_token', res.access_token);\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "client_id",
+									"value": "{{client_id}}",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "{{client_secret}}",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "{{scope}}",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "{{grant_type}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://localhost:5001/connect/token",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"connect",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7062/api/Identity",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7062/api/Identity",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7062",
+							"path": [
+								"api",
+								"Identity"
 							]
 						}
 					},
