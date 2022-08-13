@@ -34,8 +34,8 @@ Main Project for eCommerce Shopping solution built on Microservices architecture
 
 > 1. `Session 9` => Build and Release Docker, AKS
 > 1. `Session 10` => Build, and push to ACR, **Recap** of previous **`9 sessions`**
-> 1. `Session 11` => **Angular Client** Integrating with Products Micro Services WITHOUT Authentication. List of Products ONLY. Deploying Angular Client as local Container.
-> 1. `Session 12` => Deep Dive into Configuring the Anuglar Project for Development. Angular, TypeScript, ESLint, Angular Config, Environment, JEST, husky.
+> 1. `Session 11` => Deep Dive into Configuring the Anuglar Project for Development. Angular, TypeScript, ESLint, Angular Config, Environment, JEST, husky.
+> 1. `Session 12` => **Angular Client** Integrating with Products Micro Services WITHOUT Authentication. List of Products ONLY. Deploying Angular Client as local Container.
 > 1. `Session 13` => Changes to Infrastructure (AKS), Gated, and CI Builds, and Release Pipelines using GitHub Actions. We should have **3 containers** (Mongodb Datastore, Products Microservice, and Client Web App) in the AKS cluster.
 > 1. `Session 14` => **Angular Admin** Integrating with Products Micro Services WITHOUT Authentication. List of Products ONLY. Deploying Angular Admin as Container. Into AKS too.
 > 1. `Session 15` => Angular Admin CRUD Operations Integrating with Products Micro Services WITHOUT Authentication.
