@@ -33,29 +33,34 @@ Main Project for eCommerce Shopping solution built on Microservices architecture
 ## Planned Future Sessions
 
 > 1. `Session 9` => Build and Release Docker, AKS
-> 1. `Session 10` => Build, and push to ACR, **Recap** of previous **`9 sessions`**
-> 1. `Session 11` => Deep Dive into Configuring the Anuglar Project for Development. Angular, TypeScript, ESLint, Angular Config, Environment, JEST, husky.
-> 1. `Session 12` => **Angular Client** Integrating with Products Micro Services WITHOUT Authentication. List of Products ONLY. Deploying Angular Client as local Container.
-> 1. `Session 13` => Changes to Infrastructure (AKS), Gated, and CI Builds, and Release Pipelines using GitHub Actions. We should have **3 containers** (Mongodb Datastore, Products Microservice, and Client Web App) in the AKS cluster.
-> 1. `Session 14` => **Angular Admin** Integrating with Products Micro Services WITHOUT Authentication. List of Products ONLY. Deploying Angular Admin as Container. Into AKS too.
-> 1. `Session 15` => Angular Admin CRUD Operations Integrating with Products Micro Services WITHOUT Authentication.
-> 1. `Session 16` => Changes to Infrastructure (AKS), Gated, and CI Builds, and Release Pipelines using GitHub Actions. We should have **4 containers** (Mongodb Datastore, Products Microservices, Client and Admin Web Apps) in the AKS cluster.
-> 1. `Session 17` => Logging of Products Microservice. Also, Angualr Admin and Client. End-to-End Logging.
-> 1. `Session 18` => **Recap** of **`sessions 11 to 17`**
-> 1. `Session 19` => Introduction to **Identity Microservice**, and `SQL Server` data store for Identity Microservice. Verify using the `Postman` tool.
-> 1. `Session 20` => Deep Dive into **Identity Microservice** (Authentication/Authorization, Single Sign On) . Identity Under the hoods. Verify using the `Postman` tool.
-> 1. `Session 21` => Integrating Angular Admin & Client with Identity, and pass tokens to Products Micro Services.
-> 1. `Session 22 - A` => Logging Updates.
-> 1. `Session 22 - B` => Changes to Infrastructure (AKS), Gated, and CI Builds, and Release Pipelines using GitHub Actions. We should have **6 containers** (Mongodb, SQL Server Datastores, Products, Identity Microservices, Client and Admin Web Apps) in the AKS cluster.
-> 1. `Session 23` => **Recap** of **`sessions 19 to 21`**
-> 1. `Session 24` => Deep dive into API Gateway, Ocelot, and its configuration. Verify using the `Postman` tool.
-> 1. `Session 25` => Create API Gateway microservice using Ocelot, Configuring the `Products`, and `Identity` microservices route and updating Angular Client and Admin to talk to API Gateway.
-> 1. `Session 26 - A` => Logging Updates.
-> 1. `Session 26 - B` => Changes to Infrastructure (AKS), Gated, and CI Builds, and Release Pipelines using GitHub Actions. We should have **7 containers** (Mongodb, SQL Server Datastores, Products, Identity, API Gateway Microservices, Client and Admin Web Apps) in the AKS cluster.
-> 1. `Session 27` => **Recap** of **`sessions 24 to 26`**
-> 1. `Session 28` => Security of Products, and Identity Microservices. Only API Gateway can access the Products and Identity Microservices. Security of Mongodb, SQL Server Datastores, only Products and Identity Microservices can access them.
-> 1. `Session 28` => Alerts and monitoring of Products, Identity, and API Gateway Microservice.
-> 1. `Session 30` => Recap of **`sessions 28 to 29`**
+> 1. `Session 10` => **Recap** of previous **`9 sessions`**
+> 1. `Session 11` => **Angular Client** Integrating with Products Micro Services WITHOUT Authentication. List of Products ONLY. Deploying Angular Client as local Container.
+> 1. `Session 12` => Deep Dive into Configuring the Anuglar Project for Development. Angular, TypeScript, ESLint, Angular Config, Environment, husky.
+> 1. `Session 13` => Deep Dive into Unit Testing the Anuglar Project using TypeScript, and JEST
+> 1. `Session 14` => Changes to Infrastructure (AKS), Gated, and CI Builds, and Release Pipelines using GitHub Actions. We should have **3 containers** (Mongodb Datastore, Products Microservice, and Client Web App) in the AKS cluster.
+> 1. `Session 15` => **Angular Admin** Integrating with Products Micro Services WITHOUT Authentication. List of Products ONLY. Deploying Angular Admin as Container. Into AKS too.
+> 1. `Session 16` => Angular Admin CRUD Operations Integrating with Products Micro Services WITHOUT Authentication.
+> 1. `Session 17` => Changes to Infrastructure (AKS), Gated, and CI Builds, and Release Pipelines using GitHub Actions. We should have **4 containers** (Mongodb Datastore, Products Microservices, Client and Admin Web Apps) in the AKS cluster.
+> 1. `Session 18` => Deep Dive into Unit Testing the Products Micro Service using C#, and NUnit/XUnit/MSTest
+> 1. `Session 19` => Logging of Products Microservice. Also, Angualr Admin and Client. End-to-End Logging. Configruation of the Projects
+> 1. `Session 20` => **Recap** of **`sessions 11 to 17`**
+> 1. Build, and push to ACR, Products Micro Service
+> 1. `Session 21` => Introduction to **Identity Microservice**, and `SQL Server` data store for Identity Microservice. Verify using the `Postman` tool.
+> 1. `Session 22` => Deep Dive into **Identity Microservice** (Authentication/Authorization, Single Sign On) . Identity Under the hoods. Verify using the `Postman` tool.
+> 1. `Session 23` => Integrating Angular Admin & Client with Identity, and pass tokens to Products Micro Services.
+> 1. `Session 24 - A` => Logging Updates.
+> 1. `Session 25 - B` => Changes to Infrastructure (AKS), Gated, and CI Builds, and Release Pipelines using GitHub Actions. We should have **6 containers** (Mongodb, SQL Server Datastores, Products, Identity Microservices, Client and Admin Web Apps) in the AKS cluster.
+> 1. `Session 26` => **Recap** of **`sessions 19 to 21`**
+> 1. `Session 27` => Deep dive into API Gateway, Ocelot, and its configuration. Verify using the `Postman` tool.
+> 1. `Session 28` => Create API Gateway microservice using Ocelot, Configuring the `Products`, and `Identity` microservices route and updating Angular Client and Admin to talk to API Gateway.
+> 1. `Session 29 - A` => Logging Updates.
+> 1. `Session 30 - B` => Changes to Infrastructure (AKS), Gated, and CI Builds, and Release Pipelines using GitHub Actions. We should have **7 containers** (Mongodb, SQL Server Datastores, Products, Identity, API Gateway Microservices, Client and Admin Web Apps) in the AKS cluster.
+> 1. `Session 31` => **Recap** of **`sessions 24 to 26`**
+> 1. `Session 32` => Security of Products, and Identity Microservices. Only API Gateway can access the Products and Identity Microservices. Security of Mongodb, SQL Server Datastores, only Products and Identity Microservices can access them.
+> 1. `Session 33` => Alerts and monitoring of Products, Identity, and API Gateway Microservice.
+> 1. `Session 34` => Recap of **`sessions 28 to 29`**
+> 1. `Session 35` => Deep dive into **Basket** microservice using Redis Cache.
+> 1. `Session 36` => Changes to Angular Client application to add products into Cart using **Basket** microservice.
 
 ## Links to Documentation
 
