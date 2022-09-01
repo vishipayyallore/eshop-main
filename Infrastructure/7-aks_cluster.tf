@@ -31,7 +31,6 @@ resource "azurerm_kubernetes_cluster" "aks_eshop_cluster" {
     }
   }
 
-  # Identity (System Assigned or Service Principal)
   identity {
     type = "SystemAssigned"
   }
@@ -40,38 +39,6 @@ resource "azurerm_kubernetes_cluster" "aks_eshop_cluster" {
     log_analytics_workspace_id = azurerm_log_analytics_workspace.insights.id
   }
 
-  azure_active_directory_role_based_access_control {
-    managed                = true
-    admin_group_object_ids = [azuread_group.aks_administrators.id]
-  }
-
-  # # Add On Profiles
-  # addon_profile {
-  #   azure_policy { enabled = true }
-  #   oms_agent {
-  #     enabled                    = true
-  #     log_analytics_workspace_id = azurerm_log_analytics_workspace.insights.id
-  #   }
-  # }
-
-  # # RBAC and Azure AD Integration Block
-  # role_based_access_control {
-  #   enabled = true
-  # }
-
-  # # Windows Profile
-  # windows_profile {
-  #   admin_username = var.windows_admin_username
-  #   admin_password = var.windows_admin_password
-  # }
-
-  # # Linux Profile
-  # linux_profile {
-  #   admin_username = "ubuntu"
-  #   ssh_key {
-  #     key_data = file(var.ssh_public_key)
-  #   }
-  # }
 
   key_vault_secrets_provider {
     secret_rotation_enabled = true
@@ -87,3 +54,36 @@ resource "azurerm_kubernetes_cluster" "aks_eshop_cluster" {
     Environment = "dev"
   }
 }
+
+# azure_active_directory_role_based_access_control {
+#   managed                = true
+#   admin_group_object_ids = [azuread_group.aks_administrators.id]
+# }
+
+# # Add On Profiles
+# addon_profile {
+#   azure_policy { enabled = true }
+#   oms_agent {
+#     enabled                    = true
+#     log_analytics_workspace_id = azurerm_log_analytics_workspace.insights.id
+#   }
+# }
+
+# # RBAC and Azure AD Integration Block
+# role_based_access_control {
+#   enabled = true
+# }
+
+# # Windows Profile
+# windows_profile {
+#   admin_username = var.windows_admin_username
+#   admin_password = var.windows_admin_password
+# }
+
+# # Linux Profile
+# linux_profile {
+#   admin_username = "ubuntu"
+#   ssh_key {
+#     key_data = file(var.ssh_public_key)
+#   }
+# }
