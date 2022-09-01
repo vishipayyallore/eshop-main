@@ -7,10 +7,18 @@ terraform {
       source  = "hashicorp/azurerm"
       version = "~> 3.20.0"
     }
+
+    random = {
+      source  = "hashicorp/random"
+      version = "~> 3.4.1"
+    }
   }
 
 }
 
 provider "azurerm" {
   features {}
+}
+
+resource "random_pet" "randompet" {
 }
