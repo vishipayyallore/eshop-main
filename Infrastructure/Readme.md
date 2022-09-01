@@ -1,1 +1,0 @@
-# This folder contains the Terraform files for the Infrastructure of the application.
