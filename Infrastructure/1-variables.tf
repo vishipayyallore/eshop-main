@@ -1,3 +1,22 @@
+variable "location" {
+  type        = string
+  default     = "eastus"
+  description = "Location of the resource group and other resources."
+}
+
+variable "resource_group_name" {
+  type        = string
+  description = "This variable defines the Resource Group"
+  default     = "rg-eshop"
+}
+
+# Azure AKS Environment Name
+variable "environment" {
+  type        = string
+  description = "This variable defines the Environment"
+  default     = "dev-001"
+}
+
 variable "resource_group_name_prefix" {
   default     = "rg"
   description = "Prefix of the resource group name that's combined with a random ID so name is unique in your Azure subscription."
