@@ -25,5 +25,9 @@ provider "azurerm" {
   features {}
 }
 
+provider "azuread" {
+  # Configuration options
+}
+
 resource "random_pet" "randompet" {
 }
