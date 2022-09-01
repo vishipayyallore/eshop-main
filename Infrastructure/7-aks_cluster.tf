@@ -17,12 +17,14 @@ resource "azurerm_kubernetes_cluster" "aks_eshop_cluster" {
     min_count           = 1
     os_disk_size_gb     = 30
     type                = "VirtualMachineScaleSets"
+
     node_labels = {
       "nodepool-type" = "system"
       "environment"   = "dev"
       "nodepoolos"    = "linux"
       "app"           = "system-apps"
     }
+
     tags = {
       "nodepool-type" = "system"
       "environment"   = "dev"
@@ -35,16 +37,19 @@ resource "azurerm_kubernetes_cluster" "aks_eshop_cluster" {
     type = "SystemAssigned"
   }
 
+  azure_active_directory_role_based_access_control {
+    managed                = true
+    admin_group_object_ids = [azuread_group.aks_administrators.id]
+  }
+
   oms_agent {
     log_analytics_workspace_id = azurerm_log_analytics_workspace.insights.id
   }
-
 
   key_vault_secrets_provider {
     secret_rotation_enabled = true
   }
 
-  # Network Profile
   network_profile {
     network_plugin    = "azure"
     load_balancer_sku = "standard"
