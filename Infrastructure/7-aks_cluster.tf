@@ -36,6 +36,15 @@ resource "azurerm_kubernetes_cluster" "aks_eshop_cluster" {
     type = "SystemAssigned"
   }
 
+  oms_agent {
+    log_analytics_workspace_id = azurerm_log_analytics_workspace.insights.id
+  }
+
+  azure_active_directory_role_based_access_control {
+    managed                = true
+    admin_group_object_ids = [azuread_group.aks_administrators.id]
+  }
+
   # # Add On Profiles
   # addon_profile {
   #   azure_policy { enabled = true }
@@ -48,10 +57,6 @@ resource "azurerm_kubernetes_cluster" "aks_eshop_cluster" {
   # # RBAC and Azure AD Integration Block
   # role_based_access_control {
   #   enabled = true
-  #   azure_active_directory {
-  #     managed                = true
-  #     admin_group_object_ids = [azuread_group.aks_administrators.id]
-  #   }
   # }
 
   # # Windows Profile
@@ -67,6 +72,10 @@ resource "azurerm_kubernetes_cluster" "aks_eshop_cluster" {
   #     key_data = file(var.ssh_public_key)
   #   }
   # }
+
+  key_vault_secrets_provider {
+    secret_rotation_enabled = true
+  }
 
   # Network Profile
   network_profile {
