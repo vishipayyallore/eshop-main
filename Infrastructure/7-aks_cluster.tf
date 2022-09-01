@@ -55,6 +55,8 @@ resource "azurerm_kubernetes_cluster" "aks_eshop_cluster" {
     load_balancer_sku = "standard"
   }
 
+  azure_policy_enabled = true
+
   tags = {
     Environment = "dev"
   }
