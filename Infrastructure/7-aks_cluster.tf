@@ -37,7 +37,10 @@ resource "azurerm_kubernetes_cluster" "aks_eshop_cluster" {
     type = "SystemAssigned"
   }
 
-  # azure_policy { enabled = true }
+  azure_active_directory_role_based_access_control {
+    managed                = true
+    admin_group_object_ids = [azuread_group.aks_administrators.id]
+  }
 
   oms_agent {
     log_analytics_workspace_id = azurerm_log_analytics_workspace.insights.id
