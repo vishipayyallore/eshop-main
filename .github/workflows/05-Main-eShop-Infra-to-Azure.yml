@@ -15,7 +15,6 @@ env:
   ARM_CLIENT_SECRET: ${{ secrets.AZURE_AD_CLIENT_SECRET }}
   ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
   ARM_TENANT_ID: ${{ secrets.AZURE_AD_TENANT_ID }}
-  WORKING_DIRECTORY: "./Infrastructure/AKS"
 
 jobs:
   scan-terraform-config-files:
@@ -28,6 +27,8 @@ jobs:
     name: Gated Build when PR is Raised
     needs: [scan-terraform-config-files]
     uses: ./.github/workflows/02-Gated-Build-eShop-Infra.yml
+    with:
+      WORKING_DIRECTORY: "./Infrastructure"
     secrets: inherit
 
   ci-build-for-infra:

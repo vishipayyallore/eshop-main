@@ -7,19 +7,12 @@ on:
         required: true
         type: string
 
-# env:
-#   WORKING_DIRECTORY: "./Infrastructure/AKS"
-
 jobs:
   scan-terraform-config-files:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@master
-
-      - name: Display Input
-        run: |
-          echo ${{ inputs.WORKING_DIRECTORY }}
 
       - name: Run Checkov Scan
         id: checkov
