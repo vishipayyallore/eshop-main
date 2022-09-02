@@ -1,16 +1,15 @@
-variable "location" {
-  type        = string
-  default     = "eastus"
-  description = "Location of the resource group and other resources."
-}
-
 variable "resource_group_name" {
   type        = string
   description = "This variable defines the Resource Group"
   default     = "rg-eshop"
 }
 
-# Azure AKS Environment Name
+variable "location" {
+  type        = string
+  default     = "eastus"
+  description = "Location of the resource group and other resources."
+}
+
 variable "environment" {
   type        = string
   description = "This variable defines the Environment"

@@ -4,7 +4,7 @@ terraform {
     resource_group_name  = "rg-dnlh-12mar-dev"
     storage_account_name = "sttfstatedhls"
     container_name       = "terraformstate"
-    key                  = "terraformstateaks.tfstate"
+    key                  = "eshopsolution.tfstate"
   }
 
   # cloud {
