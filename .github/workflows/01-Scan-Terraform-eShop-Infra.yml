@@ -3,12 +3,12 @@ name: "01. Scan Terraform files with Checov"
 on:
   workflow_call:
     inputs:
-      username:
+      WORKING_DIRECTORY:
         required: true
         type: string
 
-env:
-  WORKING_DIRECTORY: "./Infrastructure/AKS"
+# env:
+#   WORKING_DIRECTORY: "./Infrastructure/AKS"
 
 jobs:
   scan-terraform-config-files:
@@ -19,13 +19,13 @@ jobs:
 
       - name: Display Input
         run: |
-          echo ${{ inputs.username }}
+          echo ${{ inputs.WORKING_DIRECTORY }}
 
       - name: Run Checkov Scan
         id: checkov
         uses: bridgecrewio/checkov-action@v12.1347.0
         with:
-          directory: ${{ env.WORKING_DIRECTORY }}
+          directory: ${{ inputs.WORKING_DIRECTORY }}
           soft_fail: true # optional: do not return an error code if there are failed checks
           # check: CKV_AWS_1 # optional: run only a specific check_id. can be comma separated list
           # skip_check: CKV_AWS_2 # optional: skip a specific check_id. can be comma separated list
