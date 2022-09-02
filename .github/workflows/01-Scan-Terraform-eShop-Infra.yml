@@ -2,6 +2,10 @@ name: "01. Scan Terraform files with Checov"
 
 on:
   workflow_call:
+    inputs:
+      username:
+        required: true
+        type: string
 
 env:
   WORKING_DIRECTORY: "./Infrastructure/AKS"
@@ -12,6 +16,10 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@master
+
+      - name: Display Input
+        run: |
+          echo ${{ inputs.username }}
 
       - name: Run Checkov Scan
         id: checkov
