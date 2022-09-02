@@ -21,6 +21,8 @@ jobs:
   scan-terraform-config-files:
     name: Scan Terraform files with Checov
     uses: ./.github/workflows/01-Scan-Terraform-eShop-Infra.yml
+    with:
+      username: mona
 
   gated-build-for-infra:
     name: Gated Build when PR is Raised
