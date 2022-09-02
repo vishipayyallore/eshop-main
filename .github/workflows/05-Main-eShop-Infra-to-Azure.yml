@@ -22,7 +22,7 @@ jobs:
     name: Scan Terraform files with Checov
     uses: ./.github/workflows/01-Scan-Terraform-eShop-Infra.yml
     with:
-      username: mona
+      username: ${{ env.WORKING_DIRECTORY }}
 
   gated-build-for-infra:
     name: Gated Build when PR is Raised
