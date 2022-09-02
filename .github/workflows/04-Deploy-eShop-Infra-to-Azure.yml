@@ -2,9 +2,12 @@ name: "04. Deploy eShop Infra using Terraform to Azure"
 
 on:
   workflow_call:
+    inputs:
+      WORKING_DIRECTORY:
+        required: true
+        type: string
 
 env:
-  WORKING_DIRECTORY: "./Infrastructure/AKS"
   ARM_CLIENT_ID: ${{ secrets.AZURE_AD_CLIENT_ID }}
   ARM_CLIENT_SECRET: ${{ secrets.AZURE_AD_CLIENT_SECRET }}
   ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
@@ -32,27 +35,27 @@ jobs:
       # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
       - name: Terraform Init
         run: terraform init
-        working-directory: ${{ env.WORKING_DIRECTORY }}
+        working-directory: ${{ inputs.WORKING_DIRECTORY }}
 
       # Checks that all Terraform configuration files adhere to a canonical format
       - name: Terraform Format
         run: terraform fmt -check
         continue-on-error: true
-        working-directory: ${{ env.WORKING_DIRECTORY }}
+        working-directory: ${{ inputs.WORKING_DIRECTORY }}
 
       # Validates the Terraform Files
       - name: Terraform Validate
         run: terraform validate
-        working-directory: ${{ env.WORKING_DIRECTORY }}
+        working-directory: ${{ inputs.WORKING_DIRECTORY }}
 
       # Generates an execution plan for Terraform
       - name: Terraform Plan
         run: terraform plan -no-color -input=false
-        working-directory: ${{ env.WORKING_DIRECTORY }}
+        working-directory: ${{ inputs.WORKING_DIRECTORY }}
 
       # On push to "main", build or change infrastructure according to Terraform configuration files
       # Note: It is recommended to set up a required "strict" status check in your repository for "Terraform Cloud". See the documentation on "strict" required status checks for more information: https://help.github.com/en/github/administering-a-repository/types-of-required-status-checks
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main'
         run: terraform apply -auto-approve -input=false
-        working-directory: ${{ env.WORKING_DIRECTORY }}
+        working-directory: ${{ inputs.WORKING_DIRECTORY }}

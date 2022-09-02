@@ -35,6 +35,8 @@ jobs:
     name: CI Build when PR is Merged
     needs: [gated-build-for-infra]
     uses: ./.github/workflows/03-CI-Build-eShop-Infra.yml
+    with:
+      WORKING_DIRECTORY: "./Infrastructure"
     secrets: inherit
     if: github.ref == 'refs/heads/main'
 
@@ -42,5 +44,7 @@ jobs:
     name: Deploy eShop Infra using Terraform to Azure
     needs: [ci-build-for-infra]
     uses: ./.github/workflows/04-Deploy-eShop-Infra-to-Azure.yml
+    with:
+      WORKING_DIRECTORY: "./Infrastructure"
     secrets: inherit
     if: github.ref == 'refs/heads/main'
