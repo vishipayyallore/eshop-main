@@ -15,25 +15,28 @@ env:
   ARM_CLIENT_SECRET: ${{ secrets.AZURE_AD_CLIENT_SECRET }}
   ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
   ARM_TENANT_ID: ${{ secrets.AZURE_AD_TENANT_ID }}
-  WORKING_DIRECTORY: "./Infrastructure/AKS"
 
 jobs:
   scan-terraform-config-files:
     name: Scan Terraform files with Checov
     uses: ./.github/workflows/01-Scan-Terraform-eShop-Infra.yml
     with:
-      username: mona
+      WORKING_DIRECTORY: "./Infrastructure"
 
   gated-build-for-infra:
     name: Gated Build when PR is Raised
     needs: [scan-terraform-config-files]
     uses: ./.github/workflows/02-Gated-Build-eShop-Infra.yml
+    with:
+      WORKING_DIRECTORY: "./Infrastructure"
     secrets: inherit
 
   ci-build-for-infra:
     name: CI Build when PR is Merged
     needs: [gated-build-for-infra]
     uses: ./.github/workflows/03-CI-Build-eShop-Infra.yml
+    with:
+      WORKING_DIRECTORY: "./Infrastructure"
     secrets: inherit
     if: github.ref == 'refs/heads/main'
 
@@ -41,5 +44,7 @@ jobs:
     name: Deploy eShop Infra using Terraform to Azure
     needs: [ci-build-for-infra]
     uses: ./.github/workflows/04-Deploy-eShop-Infra-to-Azure.yml
+    with:
+      WORKING_DIRECTORY: "./Infrastructure"
     secrets: inherit
     if: github.ref == 'refs/heads/main'
