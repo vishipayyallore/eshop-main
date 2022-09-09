@@ -29,11 +29,11 @@ Main Project for eCommerce Shopping solution built on Microservices architecture
 > 1. Please refer [**Session6**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session6.md) and [Video](https://www.youtube.com/watch?v=FmMIF6_bGuw) for more details.
 > 1. Please refer [**Session7**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session7.md) and [Video](https://www.youtube.com/watch?v=7abmbzh0ckA) for more details.
 > 1. Please refer [**Session8**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session8.md) and [Video](https://www.youtube.com/watch?v=z5hxCeCowFM) for more details.
-> 1. Upcoming **`Session 9`** on 09-Sep-2022 => Build/Release for Infrastructure, GitHub Actions, AKS, Unit Testing
+> 1. Upcoming **`Session 9`** on 16-Sep-2022 => Build/Release for Infrastructure, GitHub Actions, AKS, Unit Testing
 
 ## Planned Future Sessions
 
-> 1. `Session 10` => **Recap** of previous **`9 sessions`**
+> 1. `Session 10` => How to setup and execute the solution, and Recap of `previous 9` sessions
 > 1. `Session 11` => **Angular Client** Integrating with Products Micro Services WITHOUT Authentication. List of Products ONLY. Deploying Angular Client as local Container.
 > 1. `Session 12` => Deep Dive into Configuring the Anuglar Project for Development. Angular, TypeScript, ESLint, Angular Config, Environment, husky.
 > 1. `Session 13` => Deep Dive into Unit Testing the Anuglar Project using TypeScript, and JEST
