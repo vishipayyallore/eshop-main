@@ -34,7 +34,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{services-products-url}}/api/v1/Products/602d2149e773f2a3990b47f5",
+							"raw": "{{services-products-url}}/api/v1/Products/626e99afff653028515f19b8",
 							"host": [
 								"{{services-products-url}}"
 							],
@@ -42,7 +42,7 @@
 								"api",
 								"v1",
 								"Products",
-								"602d2149e773f2a3990b47f5"
+								"626e99afff653028515f19b8"
 							]
 						}
 					},
@@ -117,6 +117,34 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "PUT /api/v1/Products",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": \"626e99afff653028515f19b8\",\r\n        \"name\": \"Some Product V1\",\r\n        \"category\": \"Some Category\",\r\n        \"summary\": \"Some Summary\",\r\n        \"description\": \"Some Description\",\r\n        \"imageFile\": \"Some Image Path\",\r\n        \"price\": 1.2\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{services-products-url}}/api/v1/Products",
+							"host": [
+								"{{services-products-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Products"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -129,12 +157,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:5001/.well-known/openid-configuration",
-							"protocol": "https",
+							"raw": "{{services-identity-url}}/.well-known/openid-configuration",
 							"host": [
-								"localhost"
+								"{{services-identity-url}}"
 							],
-							"port": "5001",
 							"path": [
 								".well-known",
 								"openid-configuration"
@@ -187,12 +213,10 @@
 							]
 						},
 						"url": {
-							"raw": "https://localhost:5001/connect/token",
-							"protocol": "https",
+							"raw": "{{services-identity-url}}/connect/token",
 							"host": [
-								"localhost"
+								"{{services-identity-url}}"
 							],
-							"port": "5001",
 							"path": [
 								"connect",
 								"token"
@@ -202,7 +226,7 @@
 					"response": []
 				},
 				{
-					"name": "https://localhost:7062/api/Identity",
+					"name": "Get /api/UseIdentity",
 					"event": [
 						{
 							"listen": "test",
@@ -224,7 +248,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://localhost:7062/api/Identity",
+							"raw": "https://localhost:7062/api/UseIdentity",
 							"protocol": "https",
 							"host": [
 								"localhost"
@@ -232,7 +256,38 @@
 							"port": "7062",
 							"path": [
 								"api",
-								"Identity"
+								"UseIdentity"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "services-configuration",
+			"item": [
+				{
+					"name": "GET /api/get-configuration?all=true",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7071/api/get-configuration?all=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7071",
+							"path": [
+								"api",
+								"get-configuration"
+							],
+							"query": [
+								{
+									"key": "all",
+									"value": "true"
+								}
 							]
 						}
 					},
