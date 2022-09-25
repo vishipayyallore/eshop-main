@@ -7,13 +7,13 @@
 # Modified: 15-Mar-2022
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 
-if [[ ! -e "$PWD/eshop-main/Scripts" ]]; then
+if [[ ! -e "./eshop-main/Scripts" ]]; then
 	echo -e "Please execute the script from the folder containing eshop-main directory."
 
 	exit
 fi
 
-REPOSITORIES=(eshop-client-ngweb eshop-client-razorweb eshop-client-rjweb eshop-client-webstatus eshop-services-basket eshop-services-products eshop-apigateway-ocelot)
+REPOSITORIES=`grep -v ^# ./eshop-main/Scripts/repositories.yaml| awk '{ print $2 }' -`
 
 for REPOSITORY in ${REPOSITORIES[*]}
 do
