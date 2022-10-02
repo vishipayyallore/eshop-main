@@ -34,6 +34,87 @@ Our main Project for eCommerce Shopping solution built on Microservices architec
 
 ## Planned Future Sessions
 
+### Saga - Infrastructure
+- Session 10 => How to setup and execute the solution, and Recap of previous 9 sessions
+  
+### Saga - Client
+- Session 11 => Angular Client Integrating with Products Micro Services WITHOUT Authentication. List of Products ONLY
+  
+- Session 12 => Deep Dive into Configuring the Angular Project for Development. Angular, TypeScript, ESLint, Angular Config, Environment, husky.
+
+- Session 13 => separate design concerns:  introduce design system. (just colors, intrduce without covering code the header, profile)
+  - introduce design system concept, compare/contrast with micro-frontend
+  - show styles, header, (profile foreshadowing?)
+  - intro to npm artifact
+  
+- Session 14 => design system integration:
+  - flesh up the demo client repo a bit - create a proper routing and component for products. 
+  - repo as it exists / build script
+  - introduce design system to client.
+
+- Session 15 => Introduction to "Configuration Service", and Deep Dive [NodeJs]
+  - intro configuration service
+  - architecture overview
+
+- Session 16 => deploy, integrate Configuration service
+  - build and deploy scripts
+  - integrate into client: render product images
+  - update Containers: [ Mongodb/Products API, Configuration service ]
+
+- Session 17 => deploy the client
+  - (AKS), Gated, and CI Builds, and Release Pipelines using GitHub Actions. We should have 4 containers (Configuration service, MongoDB, Products Microservice, and Client Web App) in the AKS cluster.
+
+- Session 18 => Recap of previous 7 sessions
+
+### Saga - Multiple sources system
+- Session 19 => api getway with ocelot
+  - architecture overview
+  - foreshadow identity service, profile service
+  - project local
+  
+- Session 20 => api getway
+  - build scripts
+  - integrate the product api in api gateway
+  - integrate the configuration service in api gateway
+  - modify the configuration service settings
+  - demonstration in client
+
+- Session 21 => identity overview
+  - architecture overview
+  - database
+  - project local
+  - 
+- Session 22 => identity implementation
+  - project
+  - integration in configuration service
+  - demonstration in client
+
+- Session 23 => Profile service
+  - architecture overview
+  - database
+  - JAVA, Hibernate, Springboot
+  - note: working locally
+
+- Session 24 => Profile service AKS containerization
+  - AKS in repo
+  - release in eshop-main
+  - revise configuration to expose service
+  - revise client to consume service
+
+- Session 25 => Recap of sessions 19 to 24
+ 
+### Saga - Code quality
+- Session 26 => Deep Dive into Unit Testing the Products Micro Service using C#, and NUnit/XUnit/MSTest
+  
+- Session 27 => Deep Dive into Unit Testing the Angular Project using TypeScript, and JEST
+  - JEST setup
+  - show testing practices with products component
+  - show integration with builds script
+
+- Session 28 => Logging of Products Microservice. Also, Angualr Admin and Client. End-to-End Logging. Configruation of the Projects
+
+
+
 > 1. `Session 10` => How to setup and execute the solution, and Recap of `previous 9` sessions
 > 1. `Session 11` => **Angular Client** Integrating with Products Micro Services WITHOUT Authentication. List of Products ONLY. Deploying Angular Client as local Container.
 > 1. `Session 12` => Deep Dive into Configuring the Anuglar Project for Development. Angular, TypeScript, ESLint, Angular Config, Environment, husky.
