@@ -10,18 +10,18 @@ Our main Project for eCommerce Shopping solution built on Microservices architec
 
 > 1. [eShop Services Products](https://github.com/vishipayyallore/eshop-services-products)
 > 1. [eShop Client Web Application in Angular 14](https://github.com/vishipayyallore/eshop-client-ngweb)
-> 1. [eShop Admin Web Application in Angular 14](https://github.com/vishipayyallore/eshop-admin-ngweb)
-> 1. [eShop Services Identity](https://github.com/vishipayyallore/eshop-services-identity)
 > 1. [eShop API Gateway Ocelot](https://github.com/vishipayyallore/eshop-apigateway-ocelot)
+> 1. [eShop Services Identity](https://github.com/vishipayyallore/eshop-services-identity)
+> 1. [eShop Admin Web Application in Angular 14](https://github.com/vishipayyallore/eshop-admin-ngweb)
 > 1. [eShop Services Basket](https://github.com/vishipayyallore/eshop-services-basket)
-> 1. [eShop Client Web Razor Pages](https://github.com/vishipayyallore/eshop-client-razorweb)
 > 1. [eShop API Client Web Status](https://github.com/vishipayyallore/eshop-client-webstatus)
+> 1. [eShop Client Web Razor Pages](https://github.com/vishipayyallore/eshop-client-razorweb)
 > 1. [eShop Client Web Reactjs](https://github.com/vishipayyallore/eshop-client-rjweb)
 
 ## Completed Session(s) Video(s) and Code(s)
 
 > 1. Please watch [**Introduction** to eShop](https://www.youtube.com/watch?v=GB55gX4umNM) video series to **get the context**.
-> 1. First step into Products Microservice [**Session1.md**](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session1.md) and its [Video](https://www.youtube.com/watch?v=wQ0Xf4pKZaQ)
+> 1. First step into Products Microservice [**Session1**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session1.md) and its [Video](https://www.youtube.com/watch?v=wQ0Xf4pKZaQ)
 > 1. Please refer [**Session2**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session2.md) and [Video](https://www.youtube.com/watch?v=R8QIrph-rCI) for more details.
 > 1. Please refer [**Session3**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session3.md) and [Video](https://www.youtube.com/watch?v=xst1bjb54JM) for more details.
 > 1. Please refer [**Session4**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session4.md) and [Video](https://www.youtube.com/watch?v=G6dPdySKzbs) for more details.
@@ -29,7 +29,8 @@ Our main Project for eCommerce Shopping solution built on Microservices architec
 > 1. Please refer [**Session6**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session6.md) and [Video](https://www.youtube.com/watch?v=FmMIF6_bGuw) for more details.
 > 1. Please refer [**Session7**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session7.md) and [Video](https://www.youtube.com/watch?v=7abmbzh0ckA) for more details.
 > 1. Please refer [**Session8**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session8.md) and [Video](https://www.youtube.com/watch?v=z5hxCeCowFM) for more details.
-> 1. Upcoming **`Session 9`** on 16-Sep-2022 => Build/Release for Infrastructure, GitHub Actions, AKS, Unit Testing
+> 1. Please refer [**Session9**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session9.md) and [Video](https://www.youtube.com/watch?v=-aEf272gZBM) for more details.
+> 1. Please refer [**Session10**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session10.md) and [Video](https://www.youtube.com/watch?v=9Z4tT84VAr4) for more details.
 
 ## Planned Future Sessions
 
