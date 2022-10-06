@@ -1,5 +1,4 @@
-eshop-main
-====
+# eshop-main
 
 Our main Project for eCommerce Shopping solution built on Microservices architecture.
 
@@ -11,18 +10,18 @@ Our main Project for eCommerce Shopping solution built on Microservices architec
 
 > 1. [eShop Services Products](https://github.com/vishipayyallore/eshop-services-products)
 > 1. [eShop Client Web Application in Angular 14](https://github.com/vishipayyallore/eshop-client-ngweb)
-> 1. [eShop Admin Web Application in Angular 14](https://github.com/vishipayyallore/eshop-admin-ngweb)
-> 1. [eShop Services Identity](https://github.com/vishipayyallore/eshop-services-identity)
 > 1. [eShop API Gateway Ocelot](https://github.com/vishipayyallore/eshop-apigateway-ocelot)
+> 1. [eShop Services Identity](https://github.com/vishipayyallore/eshop-services-identity)
+> 1. [eShop Admin Web Application in Angular 14](https://github.com/vishipayyallore/eshop-admin-ngweb)
 > 1. [eShop Services Basket](https://github.com/vishipayyallore/eshop-services-basket)
-> 1. [eShop Client Web Razor Pages](https://github.com/vishipayyallore/eshop-client-razorweb)
 > 1. [eShop API Client Web Status](https://github.com/vishipayyallore/eshop-client-webstatus)
+> 1. [eShop Client Web Razor Pages](https://github.com/vishipayyallore/eshop-client-razorweb)
 > 1. [eShop Client Web Reactjs](https://github.com/vishipayyallore/eshop-client-rjweb)
 
 ## Completed Session(s) Video(s) and Code(s)
 
 > 1. Please watch [**Introduction** to eShop](https://www.youtube.com/watch?v=GB55gX4umNM) video series to **get the context**.
-> 1. First step into Products Microservice [**Session1.md**](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session1.md) and its [Video](https://www.youtube.com/watch?v=wQ0Xf4pKZaQ)
+> 1. First step into Products Microservice [**Session1**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session1.md) and its [Video](https://www.youtube.com/watch?v=wQ0Xf4pKZaQ)
 > 1. Please refer [**Session2**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session2.md) and [Video](https://www.youtube.com/watch?v=R8QIrph-rCI) for more details.
 > 1. Please refer [**Session3**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session3.md) and [Video](https://www.youtube.com/watch?v=xst1bjb54JM) for more details.
 > 1. Please refer [**Session4**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session4.md) and [Video](https://www.youtube.com/watch?v=G6dPdySKzbs) for more details.
@@ -30,14 +29,13 @@ Our main Project for eCommerce Shopping solution built on Microservices architec
 > 1. Please refer [**Session6**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session6.md) and [Video](https://www.youtube.com/watch?v=FmMIF6_bGuw) for more details.
 > 1. Please refer [**Session7**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session7.md) and [Video](https://www.youtube.com/watch?v=7abmbzh0ckA) for more details.
 > 1. Please refer [**Session8**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session8.md) and [Video](https://www.youtube.com/watch?v=z5hxCeCowFM) for more details.
-> 1. Upcoming **`Session 9`** on 16-Sep-2022 => Build/Release for Infrastructure, GitHub Actions, AKS, Unit Testing
+> 1. Please refer [**Session9**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session9.md) and [Video](https://www.youtube.com/watch?v=-aEf272gZBM) for more details.
+> 1. Please refer [**Session10**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session10.md) and [Video](https://www.youtube.com/watch?v=9Z4tT84VAr4) for more details.
 
 ## Planned Future Sessions
 
-### Saga - Infrastructure
-- Session 10 => How to setup and execute the solution, and Recap of previous 9 sessions
-  
 ### Saga - Client
+
 - Session 11 => Angular Client Integrating with Products Micro Services WITHOUT Authentication. List of Products ONLY
   
 - Session 12 => Deep Dive into Configuring the Angular Project for Development. Angular, TypeScript, ESLint, Angular Config, Environment, husky.
@@ -48,7 +46,7 @@ Our main Project for eCommerce Shopping solution built on Microservices architec
   - intro to npm artifact
   
 - Session 14 => design system integration:
-  - flesh up the demo client repo a bit - create a proper routing and component for products. 
+  - flesh up the demo client repo a bit - create a proper routing and component for products.
   - repo as it exists / build script
   - introduce design system to client.
 
@@ -67,6 +65,7 @@ Our main Project for eCommerce Shopping solution built on Microservices architec
 - Session 18 => Recap of previous 7 sessions
 
 ### Saga - Multiple sources system
+
 - Session 19 => api getway with ocelot
   - architecture overview
   - foreshadow identity service, profile service
@@ -83,7 +82,7 @@ Our main Project for eCommerce Shopping solution built on Microservices architec
   - architecture overview
   - database
   - project local
-  - 
+  -
 - Session 22 => identity implementation
   - project
   - integration in configuration service
@@ -102,8 +101,9 @@ Our main Project for eCommerce Shopping solution built on Microservices architec
   - revise client to consume service
 
 - Session 25 => Recap of sessions 19 to 24
- 
+
 ### Saga - Code quality
+
 - Session 26 => Deep Dive into Unit Testing the Products Micro Service using C#, and NUnit/XUnit/MSTest
   
 - Session 27 => Deep Dive into Unit Testing the Angular Project using TypeScript, and JEST
@@ -112,8 +112,6 @@ Our main Project for eCommerce Shopping solution built on Microservices architec
   - show integration with builds script
 
 - Session 28 => Logging of Products Microservice. Also, Angualr Admin and Client. End-to-End Logging. Configruation of the Projects
-
-
 
 > 1. `Session 10` => How to setup and execute the solution, and Recap of `previous 9` sessions
 > 1. `Session 11` => **Angular Client** Integrating with Products Micro Services WITHOUT Authentication. List of Products ONLY. Deploying Angular Client as local Container.
