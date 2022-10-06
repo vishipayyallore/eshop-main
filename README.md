@@ -34,10 +34,6 @@ Our main Project for eCommerce Shopping solution built on Microservices architec
 
 ## Planned Future Sessions
 
-### Saga - Infrastructure
-
-- Session 10 => How to setup and execute the solution, and Recap of previous 9 sessions
-  
 ### Saga - Client
 
 - Session 11 => Angular Client Integrating with Products Micro Services WITHOUT Authentication. List of Products ONLY
