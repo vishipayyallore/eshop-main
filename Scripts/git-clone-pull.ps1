@@ -3,7 +3,7 @@
 # Description: Shell script to clone a git repository and pull the latest changes
 # Authors: Apaar, Robbie, and Swamy
 # Date: 12-Mar-2022
-# Modified: 16-Mar-2022
+# Modified: 16-Mar-2022, 16-Oct-2022
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 #>
 
@@ -13,11 +13,11 @@ if ( ! $PWD.path.EndsWith('\eshop-main\Scripts') ) {
     exit
 }
 
+$repositories = ConvertFrom-Yaml -Yaml (Get-Content -Path .\repositories.yaml -Raw)
+
 while ( $PWD.path.Contains('eshop-main')) {
     Set-Location ..
 }
-
-$repositories = ("eshop-client-ngweb", "eshop-client-razorweb", "eshop-client-rjweb", "eshop-client-webstatus", "eshop-services-basket", "eshop-services-products", "eshop-apigateway-ocelot")
 
 foreach ($epository in $repositories) {
 
@@ -35,3 +35,7 @@ foreach ($epository in $repositories) {
     }
    
 }
+
+# $repositories = ("eshop-client-ngweb", "eshop-client-razorweb", "eshop-client-rjweb", "eshop-client-webstatus", "eshop-services-basket", "eshop-services-products", "eshop-apigateway-ocelot")
+
+

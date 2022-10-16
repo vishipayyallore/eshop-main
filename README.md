@@ -9,10 +9,11 @@ Our main Project for eCommerce Shopping solution built on Microservices architec
 ## Related Project Repositories
 
 > 1. [eShop Services Products](https://github.com/vishipayyallore/eshop-services-products)
+> 1. [eShop Services Configuration](https://github.com/vishipayyallore/eshop-services-configuration)
 > 1. [eShop Client Web Application in Angular 14](https://github.com/vishipayyallore/eshop-client-ngweb)
-> 1. [eShop API Gateway Ocelot](https://github.com/vishipayyallore/eshop-apigateway-ocelot)
-> 1. [eShop Services Identity](https://github.com/vishipayyallore/eshop-services-identity)
 > 1. [eShop Admin Web Application in Angular 14](https://github.com/vishipayyallore/eshop-admin-ngweb)
+> 1. [eShop Services Identity](https://github.com/vishipayyallore/eshop-services-identity)
+> 1. [eShop API Gateway Ocelot](https://github.com/vishipayyallore/eshop-apigateway-ocelot)
 > 1. [eShop Services Basket](https://github.com/vishipayyallore/eshop-services-basket)
 > 1. [eShop API Client Web Status](https://github.com/vishipayyallore/eshop-client-webstatus)
 > 1. [eShop Client Web Razor Pages](https://github.com/vishipayyallore/eshop-client-razorweb)
