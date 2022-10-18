@@ -42,3 +42,9 @@ jobs:
       WORKING_DIRECTORY: "./Infrastructure"
     secrets: inherit
     if: github.ref == 'refs/heads/main'
+
+  deploy-products-microservice-to-azure:
+    name: Deploy eShop Products Microservice to Azure
+    needs: [gated-build-for-infra]
+    uses: vishipayyallore/eshop-services-products/.github/workflows/A4-Deploy-DockerImage-ToAKS.yml@main
+    secrets: inherit
