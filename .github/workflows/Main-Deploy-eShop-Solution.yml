@@ -1,4 +1,4 @@
-name: "05. Main eShop Infra to Azure"
+name: "Main Deploy eShop Solution To Azure"
 
 on:
   push:
@@ -9,12 +9,6 @@ on:
       - main
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-
-env:
-  ARM_CLIENT_ID: ${{ secrets.AZURE_AD_CLIENT_ID }}
-  ARM_CLIENT_SECRET: ${{ secrets.AZURE_AD_CLIENT_SECRET }}
-  ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-  ARM_TENANT_ID: ${{ secrets.AZURE_AD_TENANT_ID }}
 
 jobs:
   scan-terraform-config-files:
@@ -48,3 +42,9 @@ jobs:
       WORKING_DIRECTORY: "./Infrastructure"
     secrets: inherit
     if: github.ref == 'refs/heads/main'
+
+  deploy-products-microservice-to-azure:
+    name: Deploy eShop Products Microservice to Azure
+    needs: [gated-build-for-infra]
+    uses: vishipayyallore/eshop-services-products/.github/workflows/A4-Deploy-DockerImage-ToAKS.yml@main
+    secrets: inherit
