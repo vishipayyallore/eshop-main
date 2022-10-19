@@ -45,6 +45,6 @@ jobs:
 
   deploy-products-microservice-to-azure:
     name: Deploy eShop Products Microservice to Azure
-    needs: [gated-build-for-infra]
+    needs: [deploy-infra-to-azure]
     uses: vishipayyallore/eshop-services-products/.github/workflows/A4-Deploy-DockerImage-ToAKS.yml@main
     secrets: inherit
