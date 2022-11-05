@@ -32,13 +32,12 @@ Our main Project for eCommerce Shopping solution built on Microservices architec
 > 1. Please refer [**Session8**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session8.md) and [Video](https://www.youtube.com/watch?v=z5hxCeCowFM) for more details.
 > 1. Please refer [**Session9**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session9.md) and [Video](https://www.youtube.com/watch?v=-aEf272gZBM) for more details.
 > 1. Please refer [**Session10**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session10.md) and [Video](https://www.youtube.com/watch?v=9Z4tT84VAr4) for more details.
+> 1. Please refer [**Session11**.md](https://github.com/vishipayyallore/eshop-client-ngweb/blob/main/Documentation/Sessions/Session1.md) and [Video](https://www.youtube.com/watch?v=ckWZIZVDBjI) for more details.
 
 ## Planned Future Sessions
 
 ### Saga - Client
 
-- Session 11 => Angular Client Integrating with Products Micro Services WITHOUT Authentication. List of Products ONLY
-  
 - Session 12 => Deep Dive into Configuring the Angular Project for Development. Angular, TypeScript, ESLint, Angular Config, Environment, husky.
 
 - Session 13 => separate design concerns:  introduce design system. (just colors, intrduce without covering code the header, profile)
