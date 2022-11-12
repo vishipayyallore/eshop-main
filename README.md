@@ -38,17 +38,15 @@ Our main Project for eCommerce Shopping solution built on Microservices architec
 
 ### Saga - Client
 
-- Session 12 => Deep Dive into Configuring the Angular Project for Development. Angular, TypeScript, ESLint, Angular Config, Environment, husky.
+- Session 12 => Deep Dive into Configuring the Angular Project for Development. Angular, TypeScript, ESLint, Angular Config, Environment.
 
-- Session 13 => separate design concerns:  introduce design system. (just colors, intrduce without covering code the header, profile)
+- Session 13 => wrap-up configuration: jest, husky. Separate design concerns:  introduce design system. (just colors, intrduce without covering code the header, profile)
   - introduce design system concept, compare/contrast with micro-frontend
   - show styles, header, (profile foreshadowing?)
-  - intro to npm artifact
   
-- Session 14 => design system integration:
-  - flesh up the demo client repo a bit - create a proper routing and component for products.
+- Session 14 => wrap-up design system. create github package.
   - repo as it exists / build script
-  - introduce design system to client.
+  - introduce design system to demo client.
 
 - Session 15 => Introduction to "Configuration Service", and Deep Dive [NodeJs]
   - intro configuration service
