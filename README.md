@@ -22,33 +22,32 @@ Our main Project for eCommerce Shopping solution built on Microservices architec
 ## Completed Session(s) Video(s) and Code(s)
 
 > 1. Please watch [**Introduction** to eShop](https://www.youtube.com/watch?v=GB55gX4umNM) video series to **get the context**.
-> 1. First step into Products Microservice [**Session1**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session1.md) and its [Video](https://www.youtube.com/watch?v=wQ0Xf4pKZaQ)
-> 1. Please refer [**Session2**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session2.md) and [Video](https://www.youtube.com/watch?v=R8QIrph-rCI) for more details.
-> 1. Please refer [**Session3**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session3.md) and [Video](https://www.youtube.com/watch?v=xst1bjb54JM) for more details.
-> 1. Please refer [**Session4**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session4.md) and [Video](https://www.youtube.com/watch?v=G6dPdySKzbs) for more details.
-> 1. Please refer [**Session5**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session5.md) and [Video](https://www.youtube.com/watch?v=LPI0VVM24KI) for more details.
-> 1. Please refer [**Session6**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session6.md) and [Video](https://www.youtube.com/watch?v=FmMIF6_bGuw) for more details.
-> 1. Please refer [**Session7**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session7.md) and [Video](https://www.youtube.com/watch?v=7abmbzh0ckA) for more details.
-> 1. Please refer [**Session8**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session8.md) and [Video](https://www.youtube.com/watch?v=z5hxCeCowFM) for more details.
-> 1. Please refer [**Session9**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session9.md) and [Video](https://www.youtube.com/watch?v=-aEf272gZBM) for more details.
-> 1. Please refer [**Session10**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session10.md) and [Video](https://www.youtube.com/watch?v=9Z4tT84VAr4) for more details.
-> 1. Please refer [**Session11**.md](https://github.com/vishipayyallore/eshop-client-ngweb/blob/main/Documentation/Sessions/Session1.md) and [Video](https://www.youtube.com/watch?v=ckWZIZVDBjI) for more details.
+> 1. First step into Products Microservice [Session**1**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session1.md) and its [Video](https://www.youtube.com/watch?v=wQ0Xf4pKZaQ)
+> 1. Please refer [Session**2**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session2.md) and [Video](https://www.youtube.com/watch?v=R8QIrph-rCI) for more details.
+> 1. Please refer [Session**3**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session3.md) and [Video](https://www.youtube.com/watch?v=xst1bjb54JM) for more details.
+> 1. Please refer [Session**4**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session4.md) and [Video](https://www.youtube.com/watch?v=G6dPdySKzbs) for more details.
+> 1. Please refer [Session**5**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session5.md) and [Video](https://www.youtube.com/watch?v=LPI0VVM24KI) for more details.
+> 1. Please refer [Session**6**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session6.md) and [Video](https://www.youtube.com/watch?v=FmMIF6_bGuw) for more details.
+> 1. Please refer [Session**7**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session7.md) and [Video](https://www.youtube.com/watch?v=7abmbzh0ckA) for more details.
+> 1. Please refer [Session**8**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session8.md) and [Video](https://www.youtube.com/watch?v=z5hxCeCowFM) for more details.
+> 1. Please refer [Session**9**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session9.md) and [Video](https://www.youtube.com/watch?v=-aEf272gZBM) for more details.
+> 1. Please refer [Session**10**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session10.md) and [Video](https://www.youtube.com/watch?v=9Z4tT84VAr4) for more details.
+> 1. Please refer [Session**11**.md](https://github.com/vishipayyallore/eshop-client-ngweb/blob/main/Documentation/Sessions/Session1.md) and [Video](https://www.youtube.com/watch?v=ckWZIZVDBjI) for more details.
+> 1. Please refer [Session**12**.md](https://github.com/vishipayyallore/eshop-client-ngweb/blob/main/Documentation/Sessions/Session2.md) and [Video](https://www.youtube.com/watch?v=-F9xI4Xu_p8) for more details.
 
 ## Planned Future Sessions
 
 ### Saga - Client
 
-- Session 12 => Deep Dive into Configuring the Angular Project for Development. Angular, TypeScript, ESLint, Angular Config, Environment, husky.
-
-- Session 13 => separate design concerns:  introduce design system. (just colors, intrduce without covering code the header, profile)
-  - introduce design system concept, compare/contrast with micro-frontend
-  - show styles, header, (profile foreshadowing?)
-  - intro to npm artifact
+- Session 13 => Introduce design system
+  - Jest, and Husky
+  - Wrap up client configurations
+  - Separate design concerns
+  - Introduce `Design System`
   
-- Session 14 => design system integration:
-  - flesh up the demo client repo a bit - create a proper routing and component for products.
-  - repo as it exists / build script
-  - introduce design system to client.
+- session 14 => deisgn system ingegration:
+  - introduce design system concept:  
+  - create the package in github
 
 - Session 15 => Introduction to "Configuration Service", and Deep Dive [NodeJs]
   - intro configuration service
@@ -59,48 +58,57 @@ Our main Project for eCommerce Shopping solution built on Microservices architec
   - integrate into client: render product images
   - update Containers: [ Mongodb/Products API, Configuration service ]
 
-- Session 17 => deploy the client
-  - (AKS), Gated, and CI Builds, and Release Pipelines using GitHub Actions. We should have 4 containers (Configuration service, MongoDB, Products Microservice, and Client Web App) in the AKS cluster.
+- Session 17 => deploy the Configuration Service to AKS
+  - (AKS), Gated, and CI Builds, and Release Pipelines using GitHub Actions. We should have 3 containers (Configuration service, MongoDB, Products Microservice) in the AKS cluster.
 
-- Session 18 => Recap of previous 7 sessions
+- Session 18 => Executing the Angular Application using Docker Container, Creating its Docker Image and Docker Compose
+  - Dockerfile
+  - Docker Container
+  - Docker Compose
+  - Docker Image
+  - It will use Configuration service, MongoDB, Products Microservice from AKS cluster.
+
+- Session 19 => Recap of previous 8 sessions
+  - (AKS), Gated, and CI Builds, and Release Pipelines using GitHub Actions. We should have 4 containers (Configuration service, MongoDB, Products Microservice, and eShop Client) in the AKS cluster.
+  - Recap of previous 8 sessions
 
 ### Saga - Multiple sources system
 
-- Session 19 => api getway with ocelot
+- Session 20 => api getway with ocelot
   - architecture overview
   - foreshadow identity service, profile service
   - project local
   
-- Session 20 => api getway
+- Session 21 => api getway
   - build scripts
   - integrate the product api in api gateway
   - integrate the configuration service in api gateway
   - modify the configuration service settings
   - demonstration in client
 
-- Session 21 => identity overview
+- Session 22 => identity overview
   - architecture overview
   - database
   - project local
   -
-- Session 22 => identity implementation
+- Session 23 => identity implementation
   - project
   - integration in configuration service
   - demonstration in client
 
-- Session 23 => Profile service
+- Session 24 => Profile service
   - architecture overview
   - database
   - JAVA, Hibernate, Springboot
   - note: working locally
 
-- Session 24 => Profile service AKS containerization
+- Session 25 => Profile service AKS containerization
   - AKS in repo
   - release in eshop-main
   - revise configuration to expose service
   - revise client to consume service
 
-- Session 25 => Recap of sessions 19 to 24
+- Session 26 => Recap of sessions 20 to 25
 
 ### Saga - Code quality
 
