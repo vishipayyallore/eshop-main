@@ -39,21 +39,16 @@ Our main Project for eCommerce Shopping solution built on Microservices architec
 
 ### Saga - Client
 
-- Session 12 => Deep Dive into Configuring the Angular Project for Development. Angular, TypeScript, ESLint, Angular Config, Environment, husky.
-
-- Session 13 => separate design concerns:  introduce design system. (just colors, intrduce without covering code the header, profile)
-  - introduce design system concept, compare/contrast with micro-frontend
-  - show styles, header, (profile foreshadowing?)
-  - intro to npm artifact
+- Session 13 => Introduce design system
+  - Jest, and Husky
+  - Wrap up client configurations
+  - Separate design concerns
+  - Introduce `Design System`
   
-- Session 14 => design system integration:
-  - flesh up the demo client repo a bit - create a proper routing and component for products.
-  - repo as it exists / build script
-  - introduce design system to client.
+- session 14 => deisgn system ingegration:
+  - introduce design system concept:  
+  - create the package in github
 
-- Session 1x => Executing the Angular Application using Docker Container, Creating its Docker Image and Docker Compose
-  - Discuss this with Robbie
-  
 - Session 15 => Introduction to "Configuration Service", and Deep Dive [NodeJs]
   - intro configuration service
   - architecture overview
@@ -63,48 +58,57 @@ Our main Project for eCommerce Shopping solution built on Microservices architec
   - integrate into client: render product images
   - update Containers: [ Mongodb/Products API, Configuration service ]
 
-- Session 17 => deploy the client
-  - (AKS), Gated, and CI Builds, and Release Pipelines using GitHub Actions. We should have 4 containers (Configuration service, MongoDB, Products Microservice, and Client Web App) in the AKS cluster.
+- Session 17 => deploy the Configuration Service to AKS
+  - (AKS), Gated, and CI Builds, and Release Pipelines using GitHub Actions. We should have 3 containers (Configuration service, MongoDB, Products Microservice) in the AKS cluster.
 
-- Session 18 => Recap of previous 7 sessions
+- Session 18 => Executing the Angular Application using Docker Container, Creating its Docker Image and Docker Compose
+  - Dockerfile
+  - Docker Container
+  - Docker Compose
+  - Docker Image
+  - It will use Configuration service, MongoDB, Products Microservice from AKS cluster.
+
+- Session 19 => Recap of previous 8 sessions
+  - (AKS), Gated, and CI Builds, and Release Pipelines using GitHub Actions. We should have 4 containers (Configuration service, MongoDB, Products Microservice, and eShop Client) in the AKS cluster.
+  - Recap of previous 8 sessions
 
 ### Saga - Multiple sources system
 
-- Session 19 => api getway with ocelot
+- Session 20 => api getway with ocelot
   - architecture overview
   - foreshadow identity service, profile service
   - project local
   
-- Session 20 => api getway
+- Session 21 => api getway
   - build scripts
   - integrate the product api in api gateway
   - integrate the configuration service in api gateway
   - modify the configuration service settings
   - demonstration in client
 
-- Session 21 => identity overview
+- Session 22 => identity overview
   - architecture overview
   - database
   - project local
   -
-- Session 22 => identity implementation
+- Session 23 => identity implementation
   - project
   - integration in configuration service
   - demonstration in client
 
-- Session 23 => Profile service
+- Session 24 => Profile service
   - architecture overview
   - database
   - JAVA, Hibernate, Springboot
   - note: working locally
 
-- Session 24 => Profile service AKS containerization
+- Session 25 => Profile service AKS containerization
   - AKS in repo
   - release in eshop-main
   - revise configuration to expose service
   - revise client to consume service
 
-- Session 25 => Recap of sessions 19 to 24
+- Session 26 => Recap of sessions 20 to 25
 
 ### Saga - Code quality
 
