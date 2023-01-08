@@ -41,16 +41,6 @@ Our main Project for eCommerce Shopping solution built on Microservices architec
 
 ### Saga - Client
 
-- Session 13 => Introduce design system
-  - Jest, and Husky
-  - Wrap up client configurations
-  - Separate design concerns
-  - Introduce `Design System`
-  
-- session 14 => deisgn system ingegration:
-  - introduce design system concept:  
-  - create the package in github
-
 - Session 15 => Introduction to "Configuration Service", and Deep Dive [NodeJs]
   - intro configuration service
   - architecture overview
