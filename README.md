@@ -9,8 +9,8 @@ Our main Project for eCommerce Shopping solution built on Microservices architec
 ## Related Project Repositories
 
 > 1. [eShop Services Products](https://github.com/vishipayyallore/eshop-services-products)
-> 1. [eShop Services Configuration](https://github.com/vishipayyallore/eshop-services-configuration)
 > 1. [eShop Client Web Application in Angular 14](https://github.com/vishipayyallore/eshop-client-ngweb)
+> 1. [eShop Services Configuration](https://github.com/vishipayyallore/eshop-services-configuration)
 > 1. [eShop Admin Web Application in Angular 14](https://github.com/vishipayyallore/eshop-admin-ngweb)
 > 1. [eShop Services Identity](https://github.com/vishipayyallore/eshop-services-identity)
 > 1. [eShop API Gateway Ocelot](https://github.com/vishipayyallore/eshop-apigateway-ocelot)
@@ -34,20 +34,12 @@ Our main Project for eCommerce Shopping solution built on Microservices architec
 > 1. Please refer [Session**10**.md](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Sessions/Session10.md) and [Video](https://www.youtube.com/watch?v=9Z4tT84VAr4) for more details.
 > 1. Please refer [Session**11**.md](https://github.com/vishipayyallore/eshop-client-ngweb/blob/main/Documentation/Sessions/Session1.md) and [Video](https://www.youtube.com/watch?v=ckWZIZVDBjI) for more details.
 > 1. Please refer [Session**12**.md](https://github.com/vishipayyallore/eshop-client-ngweb/blob/main/Documentation/Sessions/Session2.md) and [Video](https://www.youtube.com/watch?v=-F9xI4Xu_p8) for more details.
+> 1. Please refer [Session**13**.md](https://github.com/vishipayyallore/eshop-client-ngweb/blob/main/Documentation/Sessions/Session3.md) and [Video](https://www.youtube.com/watch?v=XKScxbJQo04) for more details.
+> 1. Please refer [Session**14**.md](https://github.com/vishipayyallore/eshop-client-ngweb/blob/main/Documentation/Sessions/Session4.md) and [Video](https://www.youtube.com/watch?v=il6wq6zHfMk) for more details.
 
 ## Planned Future Sessions
 
 ### Saga - Client
-
-- Session 13 => Introduce design system
-  - Jest, and Husky
-  - Wrap up client configurations
-  - Separate design concerns
-  - Introduce `Design System`
-  
-- session 14 => deisgn system ingegration:
-  - introduce design system concept:  
-  - create the package in github
 
 - Session 15 => Introduction to "Configuration Service", and Deep Dive [NodeJs]
   - intro configuration service
